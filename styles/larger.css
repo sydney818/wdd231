@@ -45,14 +45,25 @@
   .about-section {
     display: flex;
     gap: 1.5rem;
-    align-items: flex-start;
+    align-items: stretch;
     margin-bottom: 2rem;
   }
 
+  
   .about-student,
   .student-photo {
-    flex: 1;
-  }
+  display: flex;              
+  flex: 1;
+}
+
+ .me-text,
+ .student-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;                 
+  width: 100%;
+}
+
 
   .student-img img {
     width: 100%;
