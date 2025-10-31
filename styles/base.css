@@ -106,6 +106,7 @@ h1, h2 {
   padding-bottom: 12rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   overflow: hidden; 
+  margin-bottom: 1rem;
 }
 
 .me-text h2 {

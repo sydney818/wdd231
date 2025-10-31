@@ -1,15 +1,15 @@
 /* Larger screen styles */
 @media only screen and (min-width: 38rem) {
 
-.container {
-  max-width: 1200px;  /* keeps content readable */
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
-footer {
-  margin-top: 1rem;  
-}
+  footer {
+    margin-top: 1rem;
+  }
 
   header {
     display: flex;
@@ -18,11 +18,11 @@ footer {
   }
 
   .hamburger {
-    display: none; 
+    display: none;
   }
 
   .navigation {
-    display: block; 
+    display: block;
     background-color: transparent;
   }
 
@@ -42,14 +42,15 @@ footer {
   }
 
 
-  .about-student {
+  .about-section {
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
     align-items: flex-start;
+    margin-bottom: 2rem;
   }
 
-  .me-text, .student-img {
+  .about-student,
+  .student-photo {
     flex: 1;
   }
 
@@ -57,10 +58,15 @@ footer {
     width: 100%;
     max-width: 250px;
   }
-}
 
-#courseList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+
+  .certificate {
+    clear: both;
+  }
+
+  #courseList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }

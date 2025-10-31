@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/larger.css" />
 </head>
@@ -42,6 +41,7 @@
     <h1>Home</h1>
 
     <!-- ABOUT + STUDENT SECTION -->
+    <div class="about-section">
     <section class="about-student">
       <div class="me-text">
         <h2>About Me</h2>
@@ -59,12 +59,16 @@
           and I can't wait to see where it takes me!
         </p>
       </div>
+      </section>
 
+    <section class="student-photo">
       <div class="student-img">
         <h2>Student Photo</h2>
-        <img src="images/profile2.jpg" alt="Image of Sydney and her family" width="200" height="200">
+        <img src="images/profile2.jpg" alt="student photo" width="200" height="200">
       </div>
     </section>
+    </div>
+    
 
     <!-- CERTIFICATE SECTION -->
     <section class="certificate">
@@ -94,7 +98,7 @@
   </footer>
 
   <!-- SCRIPTS -->
-  <script src="scripts/navigation.js"></script>
-  <script src="scripts/courses.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </body>
 </html>
