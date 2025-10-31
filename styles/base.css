@@ -15,7 +15,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 40px auto 40px;
-  align-items: left;
+  align-items: center;
   padding: 10px;
   border-bottom: solid 2px #b3c8ec;
   background-color: white;
