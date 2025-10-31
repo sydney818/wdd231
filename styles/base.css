@@ -1,0 +1,270 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5; 
+  color: #333;
+}
+
+
+/* ------------------ HEADER ------------------ */
+header {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  align-items: left;
+  padding: 10px;
+  border-bottom: solid 2px #b3c8ec;
+  background-color: white;
+}
+
+
+header img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+header span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ------------------ NAVIGATION ------------------ */
+.hamburger {
+  justify-self: end;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+.hamburger::before {
+  content: "\2630"; /* hamburger icon */
+}
+
+.hamburger.show::before {
+  content: "\00D7"; 
+}
+
+.navigation {
+  display: none;
+  background-color: #b3c8ec;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navigation li a:hover {
+  background-color: #a0b9e0;
+  color: white;
+}
+
+/* ------------------ MAIN ------------------ */
+main {
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+h1, h2 {
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------ ABOUT/STUDENT SECTION ------------------ */
+
+.me-text {
+  background-color: white;
+  border-radius: 6px;
+  padding: 0;
+  padding-bottom: 12rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.me-text h2 {
+  background-color: #b3c8ec; 
+  color: #333;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0; 
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.me-text p {
+  padding: 1rem; 
+  margin: 0;
+  line-height: 1.5;
+}
+
+.student-img {
+  background-color: white;
+  border-radius: 6px;
+  padding: 0; 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  margin-bottom: 2rem;
+}
+
+.student-img h2 {
+  background-color: #b3c8ec;
+  color: #333;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0; 
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.student-img img {
+  display: block;
+  margin: 1rem auto; 
+  border-radius: 4px;
+  width: 200px;
+  height: auto;
+}
+
+/* ------------------ CERTIFICATE SECTION ------------------ */
+.certificate {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  flex: 1;
+  background-color: #b3c8ec;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a0b9e0;
+}
+
+.course {
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f8f8f8;
+}
+
+.course.completed {
+  background-color: #b3c8ec;
+  color: white;
+}
+
+#totalCredits {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#courseList {
+  display: grid;
+  grid-template-columns: 3fr; 
+  gap: 1rem;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  background-color: #b3c8ec;
+  color: #333;
+  padding: 0.5rem 0.75rem; 
+  text-align: center;
+  margin-top: 1rem;       
+  line-height: 1.4;        
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+  padding: .25rem 10px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  transition: background-color 0.3s;
+}
+
+.social a:hover {
+  background-color: #8AA9DC;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
