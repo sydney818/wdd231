@@ -136,3 +136,5 @@ document.getElementById('wdd').addEventListener('click', () => {
   displayCourses(wddCourses);
 });
 
+
+

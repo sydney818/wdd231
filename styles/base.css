@@ -10,6 +10,11 @@ body {
   color: #333;
 }
 
+.navigation a.active {
+  background-color: #5A7DB6;
+  color: white;
+}
+
 
 /* ------------------ HEADER ------------------ */
 header {
@@ -180,7 +185,7 @@ button {
 }
 
 button:hover {
-  background-color: #a0b9e0;
+  background-color: #b3c8ec;
 }
 
 .course {
@@ -193,7 +198,7 @@ button:hover {
 
 .course.completed {
   background-color: #b3c8ec;
-  color: white;
+  color: #000;
 }
 
 #totalCredits {
