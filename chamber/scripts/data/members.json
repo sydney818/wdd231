@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Bar W Steakhouse & Bar Dub Grill",
+    "address": "2276 S 425 W, Nephi UT 84648",
+    "phone": "435-555-1200",
+    "website": "https://BarWSteakhouse.com",
+    "level": 1
+  },
+  {
+    "name": "Branded Barbers Barbershop",
+    "address": "31 N Main St, Nephi UT 84648",
+    "phone": "435-825-1501",
+    "website": "https://Brandedbarbers.com",
+    "level": 2
+  },
+  {
+    "name": "The Green Gypsy Shop",
+    "address": "27 N Main St, Nephi UT 84648",
+    "phone": "435-580-9923",
+    "website": "https://greengypsy.com",
+    "level": 3
+  },
+  {
+    "name": "Choice Hardware & Home Center",
+    "address": "965 N Main St, Nephi UT 84648",
+    "phone": "435-623-2516",
+    "website": "https://choicehardware.com",
+    "level": 2
+  },
+  {
+    "name": "Nephi Floral & Gifts",
+    "address": "91 E Center St, Nephi UT 84648",
+    "phone": "435-623-0261",
+    "website": "https://nephifloral.com",
+    "level": 1
+  },
+  {
+    "name": "Nebo Market",
+    "address": "965 N Main St, Nephi UT 84648",
+    "phone": "435-623-6125",
+    "website": "https://nebomarket.com",
+    "level": 3
+  },
+  {
+    "name": "Lisa's County Kitchen",
+    "address": "735 S Main St, Nephi UT 84648",
+    "phone": "435-623-0079",
+    "website": "https://nebomarket.com",
+    "level": 1
+  }
+]

@@ -1,15 +1,35 @@
 
+/* Larger screen styles */
+@media only screen and (min-width: 38rem) {
 
-h2{
-    background-color:  #acb7ae;
-    color: #111111;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
-h1{
-    color: #DDA448;
-    background-color: #3a4660 ;
-}
+  .navigation {
+    display: block;
+    background-color: transparent;
+  }
 
-h3{
-    color: #0E4D92
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+
+  /* hide hamburger on large screens */
+  .hamburger {
+    display: none;
+  }
 }

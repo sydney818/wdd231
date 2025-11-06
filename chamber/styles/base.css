@@ -1,4 +1,132 @@
+/* -------- ROOT VARIABLES -------- */
+:root {
+  --primary: #303554;     
+  --accent1: #E4DECD;   
+  --secondary: #82716E;   
+  --accent2: #C2B490;    
+  --background: #303554;
+  --background2: #FAFAFA;  
+  --text: #FAFAFA; 
+  --text2: #111111;       
 
-header{
-    background-color:#E4DECD ;
+  --font-head: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background2);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background2);
+  padding: 1rem;
+  color: var(--text2);
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branding img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background2);
+  padding: 1px
+}
+
+.branding span {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  justify-self: end;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  color: var(--text2); 
+}
+
+.hamburger::before {
+  content: "\2630"; /* hamburger icon */
+}
+
+.hamburger.show::before {
+  content: "\00D7"; 
+}
+
+/* NAV */
+
+.navigation { 
+    display: none;
+    background-color: var(--background2);
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navigation li a:hover {
+  background-color: var(--background2);
+  color: black;
+}
+
+/*  MAIN DEFAULT  */
+main {
+  padding: 1rem;
+}
+
+/*  FOOTER  */
+footer {
+  background-color: var(--accent1);
+  color: var(--text2);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-info p {
+  margin: 0.25rem 0;
+}
+
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+.social img {
+  margin: 0 6px;
+}
+
+
