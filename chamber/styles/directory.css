@@ -1,3 +1,18 @@
+/* -------- ROOT VARIABLES -------- */
+:root {
+  --primary: #303554;     
+  --accent1: #E4DECD;   
+  --secondary: #82716E;   
+  --accent2: #C2B490;    
+  --background: #303554;
+  --background2: #FAFAFA;  
+  --text: #FAFAFA; 
+  --text2: #111111;       
+
+  --font-head: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
 
 .member-card {
   background-color: var(--background2);
@@ -5,4 +20,52 @@
   border: 1px solid var(--accent2);
   border-radius: 8px;
   padding: 1rem;
+  margin-top: 12px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+#cards section {
+  background-color: var(--background2);
+  border: 1px solid var(--secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--primary);
+}
+
+.member-link{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+
+.list #cards {
+  display: block;
+}
+
+.list #cards section {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid var(--secondary);
+  padding: .75rem 0;
+  border-radius: 0;
+}
+
+
+@media (max-width: 820px){
+  #cards{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+
+@media (max-width: 540px){
+  #cards{
+    grid-template-columns: 1fr;
+    padding-inline: 15px;   
+  }
 }

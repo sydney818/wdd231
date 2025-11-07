@@ -32,4 +32,15 @@
   .hamburger {
     display: none;
   }
+
+    .footer-container {
+     grid-template-columns: 1fr;
+     text-align: left;
+  }
+
+  .footer-social {
+     margin: 1rem 0;
+  }
 }
+
+
