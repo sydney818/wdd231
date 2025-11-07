@@ -1,0 +1,8 @@
+
+.member-card {
+  background-color: var(--background2);
+  color: var(--text2);  
+  border: 1px solid var(--accent2);
+  border-radius: 8px;
+  padding: 1rem;
+}
