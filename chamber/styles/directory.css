@@ -20,6 +20,21 @@
   max-width: 100%;
 }
 
+main h1 {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.view-buttons {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 .member-card {
   background-color: var(--background2);
@@ -32,24 +47,30 @@
 }
 
 .member-card p {
-  margin: 0.25rem 0;            /* small spacing between text */
+  margin: 0.25rem 0;           
 }
 
 #cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
-  margin-top: 1rem;
+  margin: 0 auto;
   padding: 0 0.75rem;
+  max-width: 1200px;
 }
 
 #cards section {
   background-color: var(--background2);
-  border: 1px solid var(--secondary);
+  border: 3px solid var(--secondary);
   padding: 1rem;
   border-radius: 8px;
   color: var(--primary);
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 11px rgba(8, 8, 8, 0.5);
 }
+
+
+
 
 .member-link{
   overflow-wrap: anywhere;

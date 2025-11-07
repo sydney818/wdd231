@@ -38,9 +38,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background);
+  background-color: var(--background2);
   padding: 1rem;
-  color: var(--text);
+  color: var(--text2);
+  border-bottom: 20px solid var(--accent2);
+}
+
+header {
+  padding: 2rem 2rem;
 }
 
 
@@ -51,9 +56,8 @@ header {
 }
 
 .branding img {
-  width: 40px;
-  height: 40px;
-  background-color: var(--background2);
+  width: 60px;
+  height: 60px;
   padding: 1px
 }
 
@@ -100,7 +104,7 @@ header {
 .navigation ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 .navigation li a {
@@ -108,7 +112,10 @@ header {
   padding: 0.8rem;
   text-decoration: none;
   font-weight: 500;
-  color: var(--text);
+  color: var(--text2);
+  border: 2px solid var(--accent2);  /* add border */
+  border-radius: 6px;
+
 }
 
 .navigation li a:hover {
@@ -116,18 +123,28 @@ header {
   color: var(--text2); 
 }
 
+.navigation li a:hover {
+  border: 2px solid var(--accent2);
+  border-radius: 6px;
+}
+
+.navigation li a.active {
+  background-color: var(--accent2);
+  color: var(--text2);
+  font-weight: 600;
+}
+
+
 /*  MAIN DEFAULT  */
 main {
-  padding: 0.5rem;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 /*  FOOTER  */
 footer {
-  background-color: var(--accent1);
-  color: var(--text2);
+  background-color: var(--background);
+  color: var(--text);
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
@@ -139,6 +156,7 @@ footer {
   gap: 2rem;
   justify-content: space-between;
   text-align: left;
+  border-top: 20px solid var(--accent2);
 }
 
 .contact {
@@ -168,6 +186,11 @@ footer {
   margin: 0 6px;
 }
 
+
+.social a:hover img {
+  filter: brightness(0.7);
+  transform: scale(1.05);
+}
 
 
 
