@@ -82,7 +82,6 @@ header {
 
 .navigation { 
     display: none;
-    color: var(--text);
 }
 
 
@@ -101,7 +100,7 @@ header {
   padding: 0.8rem;
   text-decoration: none;
   font-weight: 500;
-  color: var(--text2);
+  color: var(--primary);
   border: 2px solid var(--accent2);  
   border-radius: 6px;
 
