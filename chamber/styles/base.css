@@ -41,9 +41,6 @@ header {
   padding: 1rem;
   color: var(--text2);
   border-bottom: 20px solid var(--accent2);
-}
-
-header {
   padding: 2rem 2rem;
 }
 
@@ -74,11 +71,9 @@ header {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.hamburger {
   color: var(--text2); 
 }
+
 
 .hamburger::before {
   content: "\2630"; /* hamburger icon */
@@ -112,7 +107,7 @@ header {
   text-decoration: none;
   font-weight: 500;
   color: var(--text2);
-  border: 2px solid var(--accent2);  /* add border */
+  border: 2px solid var(--accent2);  
   border-radius: 6px;
 
 }
@@ -120,12 +115,10 @@ header {
 .navigation li a:hover {
   background-color: var(--accent2); 
   color: var(--text2); 
-}
-
-.navigation li a:hover {
   border: 2px solid var(--accent2);
   border-radius: 6px;
 }
+
 
 .navigation li a.active {
   background-color: var(--accent2);
@@ -190,6 +183,15 @@ footer {
   filter: brightness(0.7);
   transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+
 
 
 

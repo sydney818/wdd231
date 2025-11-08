@@ -15,7 +15,8 @@
 
   .navigation ul {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 2rem;
     list-style: none;
     padding: 0;
@@ -25,6 +26,17 @@
   .navigation a {
     text-decoration: none;
     font-weight: 500;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* branding | spacer | nav/hamburger */
+    align-items: center;
+    column-gap: 24px;
+    background-color: var(--background2);
+    color: var(--text2);
+    padding: 2rem;
+    border-bottom: 20px solid var(--accent2);
   }
 
 
