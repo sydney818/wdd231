@@ -17,7 +17,6 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: var(--background2);
-    color: var(--text);
     font-family: var(--font-body);
     font-size: 17px;
     height: 100%; 
@@ -178,7 +177,7 @@ footer {
 }
 
 .contact-info {
-  align-items: left;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
