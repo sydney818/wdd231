@@ -56,3 +56,18 @@
 }
 
 
+
+/************ Home Page *****************/
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 65vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 80vh;
+  }
+}
+

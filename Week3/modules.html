@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules Example: Course and Sections</title>
+  <link rel="stylesheet" href="styles/modules.css">
+  <script type="module" src="scripts/modules.mjs"></script>
+</head>
+
+<body>
+  <main>
+  <h1 id="courseName">Web Frontend Development I</h1>
+  <h2 id="courseCode">WDD231</h2>
+
+  <div id="enrollment">
+    <label for="sectionNumber">Choose a section:</label>
+    <select id="sectionNumber">
+      <option value="0" disabled="" selected="">--</option>
+    <option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+    <button id="enrollStudent">Enroll a Student</button>
+    <button id="dropStudent">Drop a Student</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Section</th>
+        <th>Enrolled</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody id="sections"><tr>
+    <td>1</td>
+    <td>88</td>
+    <td>Brother Bingham</td></tr><tr>
+    <td>2</td>
+    <td>81</td>
+    <td>Sister Shultz</td></tr><tr>
+    <td>3</td>
+    <td>95</td>
+    <td>Sister Smith</td></tr></tbody>
+  </table>
+  </main>
+
+
+<iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe></body></html>
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NaturalReaders Selection Detection Icon</title>
+<link type="text/css" rel="stylesheet" href="chrome-extension://kohfgcgbkjodfcfkcackpagifgbcmimk/injected/nr-ext-dom/nr-ext-select-icon/nr-ext-select-icon.css"></head>
+<body>
+    <div class="nr-ext-icon">
+        <button id="readIcon" class="rs-btn-play"></button>
+    </div>
+</body>
+</html>
+</iframe>
+</body>
+</html>
