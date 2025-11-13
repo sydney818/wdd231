@@ -52,17 +52,66 @@
     <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
   </header>
 
-  <main>
+<main>
+
+    <!-- HERO -->
     <section class="hero">
-      <img class="hero-img" src="images/nephi2-2.jpg" alt="Juab county county center">
-      <h1>Supporting Local Businesses</h1>
-      <p>Join the Juab County Chamber of Commerce and help our community grow</p>
-      <a href="join.html" class="cta">Join the Chamber</a>
+        <img class="hero-img" src="images/Mona2-2.jpg" alt="Juab County center">
+        <div class="hero-text-box">
+            <h1>Supporting Local Businesses</h1>
+            <p>Join the Juab County Chamber of Commerce and help our community grow</p>
+            <a href="join.html" class="cta">Join the Chamber</a>
+        </div>
     </section>
 
+    <!-- HOME SECTION -->
+    <section class="home-section">
+        <h1 class="home-title">Home</h1>
 
-  </main>
+       
+        <div class="info-grid">
 
+            <!-- EVENTS CARD -->
+            <section id="events" class="events-card">
+                <h3>Events</h3>
+                <table id="events-table">
+                    <thead>
+                        <tr>
+                            <th>Events</th>
+                            <th>Location</th>
+                            <th>Dates</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tree Fest</td><td>Juab County Courthouse</td><td>Nov 17–Dec 1</td></tr>
+                        <tr><td>Tree Lighting</td><td>Juab County Courthouse</td><td>Nov 29</td></tr>
+                        <tr><td>Christmas Parade</td><td>Juab County Courthouse</td><td>Nov 29</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- WEATHER CARD -->
+            <section id="weather" class="weather-card">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" alt="weather icon">
+                <p><span id="temp"></span>°F</p>
+                <p id="description"></p>
+                <p>High: <span id="high"></span></p>
+                <p>Low: <span id="low"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </section>
+
+            <!-- FORECAST CARD -->
+            <section id="forecast" class="forecast-card">
+                <h3>Weather Forecast</h3>
+                <div id="forecast-cards"></div>
+            </section>
+
+        </div> <!-- END info-grid -->
+
+    </section> <!-- END home-section -->
+
+</main>
 
     
 
