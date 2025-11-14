@@ -29,6 +29,8 @@
 
     <!-- SCRIPTS -->
     <script src="scripts/global.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
 
 
 </head>
@@ -70,7 +72,7 @@
 
        
         <div class="info-grid">
-
+          
             <!-- EVENTS CARD -->
             <section id="events" class="events-card">
                 <h3>Events</h3>
@@ -90,11 +92,12 @@
                 </table>
             </section>
 
+
             <!-- WEATHER CARD -->
             <section id="weather" class="weather-card">
                 <h3>Current Weather</h3>
                 <img id="weather-icon" alt="weather icon">
-                <p><span id="temp"></span>°F</p>
+                <p><span id="temp"></span>&degF</p>
                 <p id="description"></p>
                 <p>High: <span id="high"></span></p>
                 <p>Low: <span id="low"></span></p>
@@ -105,6 +108,11 @@
             <section id="forecast" class="forecast-card">
                 <h3>Weather Forecast</h3>
                 <div id="forecast-cards"></div>
+            </section>
+
+            <section id="spotlights" class="spotlights-caad">
+              <h3 >Member Spotlights</h3>
+              <div id="spotlight-container"></div>
             </section>
 
         </div> <!-- END info-grid -->
