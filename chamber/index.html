@@ -35,164 +35,167 @@
 
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="branding">
-      <img src="images/users.svg" alt="Site Logo">
-      <span>Juab County Chamber of Commerce</span>
+  <div class="page-wrap"> 
+    <!-- HEADER -->
+    <header>
+      <div class="branding">
+        <img src="images/users.svg" alt="Site Logo">
+        <span>Juab County Chamber of Commerce</span>
+      </div>
+
+      <nav id="nav-bar" class="navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+
+      <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+    </header>
+
+  <main>
+
+      <!-- HERO -->
+      <section class="hero">
+          <img class="hero-img" src="images/hero.jpg" alt="Juab County center">
+
+          <div class="hero-text-box">
+              <h2>Supporting Local Businesses</h2>
+              <p>Join the Juab County Chamber of Commerce and help our community grow</p>
+              <a href="join.html" class="cta">Join the Chamber</a>
+          </div>
+      </section>
+
+      <!-- HOME SECTION -->
+      <section class="home-section">
+          <h1 class="home-title">Home</h1>
+
+        
+          <div class="info-grid">
+            
+              <!-- EVENTS CARD -->
+              <section id="events" class="events-card">
+                  <h3>Events</h3>
+                  <table id="events-table">
+                      <thead>
+                          <tr>
+                              <th>Events</th>
+                              <th>Location</th>
+                              <th>Dates</th>
+                          </tr>
+                      </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tree Fest</td>
+                                <td>Juab County Courthouse</td>
+                                <td>Nov 17–Dec 1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Tree Lighting Ceremony</td>
+                                <td>Nephi City Park</td>
+                                <td>Nov 29</td>
+                            </tr>
+
+                            <tr>
+                                <td>Christmas Parade</td>
+                                <td>Main Street, Nephi</td>
+                                <td>Nov 29</td>
+                            </tr>
+
+                            <tr>
+                                <td>Winter Market</td>
+                                <td>County Fairgrounds</td>
+                                <td>Dec 2</td>
+                            </tr>
+
+                            <tr>
+                                <td>Holiday Craft Night</td>
+                                <td>Nephi Library</td>
+                                <td>Dec 5</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chamber Breakfast</td>
+                                <td>Juab Senior Center</td>
+                                <td>Dec 12</td>
+                            </tr>
+
+                        </tbody>
+                  </table>
+              </section>
+
+
+              <!-- WEATHER CARD -->
+              <section id="weather" class="weather-card">
+                  <h3>Current Weather</h3>
+
+                  <div class="weather-flex">
+                      <img id="weather-icon" src="https://openweathermap.org/img/wn/01n@2x.png" alt="Current weather icon">
+
+                      <div class="weather-info">
+                          <p class="weather-temp"><span id="temp"></span></p>
+                          <p id="description"></p>
+                          <p>High: <span id="high"></span>°F</p>
+                          <p>Low: <span id="low"></span>°F</p>
+                          <p>Humidity: <span id="humidity"></span>%</p>
+                      </div>
+                  </div>
+              </section>
+
+              <!-- FORECAST CARD -->
+              <section id="forecast" class="forecast-card">
+                  <h3>Weather Forecast</h3>
+                  <div id="forecast-cards"></div>
+              </section>
+
+              <section id="spotlights" class="spotlights-card">
+                  <h3>Member Spotlights</h3>
+                  <div id="spotlight-container"></div>
+              </section>
+
+          </div> <!-- END info-grid -->
+
+      </section> <!-- END home-section -->
+
+  </main>
+
+      
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="contact-info">
+        <p class="contact">Juab County Chamber of Commerce</p>
+        <p>347 N Main St, Nephi, UT 84648</p>
+        <p>435-888-1212</p>
+        <p>juabchamber@gmail.com</p>
+      </div>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank">
+          <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook" width="50" height="50">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="images/youtube.svg" alt="YouTube" width="50" height="50">
+        </a>
+      </div>
+
+      <div class="footer-info">
+        <p>WDD231 | Sydney Anderson</p>
+        <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+
     </div>
+  </footer>
 
-    <nav id="nav-bar" class="navigation">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html">Discover</a></li>
-      </ul>
-    </nav>
-
-    <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
-  </header>
-
-<main>
-
-    <!-- HERO -->
-    <section class="hero">
-        <img class="hero-img" src="images/hero.jpg" alt="Juab County center">
-
-        <div class="hero-text-box">
-            <h2>Supporting Local Businesses</h2>
-            <p>Join the Juab County Chamber of Commerce and help our community grow</p>
-            <a href="join.html" class="cta">Join the Chamber</a>
-        </div>
-    </section>
-
-    <!-- HOME SECTION -->
-    <section class="home-section">
-        <h1 class="home-title">Home</h1>
-
-       
-        <div class="info-grid">
-          
-            <!-- EVENTS CARD -->
-            <section id="events" class="events-card">
-                <h3>Events</h3>
-                <table id="events-table">
-                    <thead>
-                        <tr>
-                            <th>Events</th>
-                            <th>Location</th>
-                            <th>Dates</th>
-                        </tr>
-                    </thead>
-                      <tbody>
-                          <tr>
-                              <td>Tree Fest</td>
-                              <td>Juab County Courthouse</td>
-                              <td>Nov 17–Dec 1</td>
-                          </tr>
-
-                          <tr>
-                              <td>Tree Lighting Ceremony</td>
-                              <td>Nephi City Park</td>
-                              <td>Nov 29</td>
-                          </tr>
-
-                          <tr>
-                              <td>Christmas Parade</td>
-                              <td>Main Street, Nephi</td>
-                              <td>Nov 29</td>
-                          </tr>
-
-                          <tr>
-                              <td>Winter Market</td>
-                              <td>County Fairgrounds</td>
-                              <td>Dec 2</td>
-                          </tr>
-
-                          <tr>
-                              <td>Holiday Craft Night</td>
-                              <td>Nephi Library</td>
-                              <td>Dec 5</td>
-                          </tr>
-
-                          <tr>
-                              <td>Chamber Breakfast</td>
-                              <td>Juab Senior Center</td>
-                              <td>Dec 12</td>
-                          </tr>
-
-                      </tbody>
-                </table>
-            </section>
-
-
-            <!-- WEATHER CARD -->
-            <section id="weather" class="weather-card">
-                <h3>Current Weather</h3>
-
-                <div class="weather-flex">
-                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01n@2x.png" alt="Current weather icon">
-
-                    <div class="weather-info">
-                        <p class="weather-temp"><span id="temp"></span></p>
-                        <p id="description"></p>
-                        <p>High: <span id="high"></span>°F</p>
-                        <p>Low: <span id="low"></span>°F</p>
-                        <p>Humidity: <span id="humidity"></span>%</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FORECAST CARD -->
-            <section id="forecast" class="forecast-card">
-                <h3>Weather Forecast</h3>
-                <div id="forecast-cards"></div>
-            </section>
-
-            <section id="spotlights" class="spotlights-caad">
-                <h3>Member Spotlights</h3>
-                <div id="spotlight-container"></div>
-            </section>
-
-        </div> <!-- END info-grid -->
-
-    </section> <!-- END home-section -->
-
-</main>
-
-    
-
-<footer>
-  <div class="footer-container">
-
-    <div class="contact-info">
-      <p class="contact">Juab County Chamber of Commerce</p>
-      <p>347 N Main St, Nephi, UT 84648</p>
-      <p>435-888-1212</p>
-      <p>juabchamber@gmail.com</p>
-    </div>
-
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank">
-        <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
-      </a>
-      <a href="https://www.facebook.com/" target="_blank">
-        <img src="images/facebook.svg" alt="Facebook" width="50" height="50">
-      </a>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube.svg" alt="YouTube" width="50" height="50">
-      </a>
-    </div>
-
-    <div class="footer-info">
-      <p>WDD231 | Sydney Anderson</p>
-      <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
-      <p id="lastModified"></p>
-    </div>
-
-  </div>
-</footer>
+</div>
 
 
 </body>

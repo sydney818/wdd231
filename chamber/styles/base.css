@@ -27,8 +27,11 @@ html, body {
 }
 
 
-
-
+.page-wrap {
+  padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 
 
@@ -40,14 +43,10 @@ header {
   background-color: var(--background2);
   color: var(--text2);
   border-bottom: 20px solid var(--primary);
-  padding: 2rem 2rem;
 }
 
 
-.brading text {
-  text-decoration: underline;
-  text-decoration-color: var(--primary);  
-}
+
 
 
 .branding {
@@ -75,7 +74,7 @@ header {
 
 .hamburger {
     background: none;
-    color: var(--midnight);
+    color: var(--primary);
     border: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -204,12 +203,9 @@ footer {
   position: relative;   
   width: 100%;
   border-top: 8px solid var(--accent2);
-  margin-bottom: 0;
 }
 
-h1 {
-  margin-left: 1rem;
-}
+
 
 .hero-img {
   width: 100%;
@@ -242,7 +238,8 @@ h1 {
 }
 
 .hero .cta:hover {
-  background-color: var(--accent1);
+  background-color: var(--primary);
+  color: var(--text);
 }
 
 /******************** Home Section **********************/
@@ -253,7 +250,6 @@ h1 {
   display: grid;
   grid-template-columns: 1fr ; 
   gap: 1.5rem;
-  width: 100%;
 }
 
 .events-card,
@@ -278,7 +274,6 @@ h1 {
     color: var(--text);
     padding: 0.75rem 1rem;
     margin: -1rem -1rem 1rem -1rem;
-    margin-bottom: 1rem;
     border-bottom: 8px solid var(--accent2);
 }
 
@@ -286,8 +281,6 @@ h1 {
     display: flex;
     align-items: flex-start;   
     gap: 2rem;                 
-    margin-top: 1rem;
-
 }
 
 .weather-info {
