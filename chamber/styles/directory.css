@@ -11,8 +11,7 @@ main {
 }
 
 main h1 {
-  background-color: var(--primary);
-  color: var(--text);
+  color: var(--primary);
   padding: 1rem;
   margin: 0;
   width: 100%;
