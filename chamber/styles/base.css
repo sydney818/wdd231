@@ -404,6 +404,10 @@ h1 {
   padding: 1rem;
 }
 
+#spotlights > h3 {
+  display: none;
+}
+
 
 .spotlight-card {
   background: var(--accent);
