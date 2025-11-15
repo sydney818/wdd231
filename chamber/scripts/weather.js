@@ -5,6 +5,8 @@ const captionDesc = document.querySelector('#description');
 const highTemp = document.querySelector('#high');
 const lowTemp = document.querySelector('#low');
 const humidity = document.querySelector('#humidity');
+const sunrise = document.querySelector('#sunrise');
+const sunset = document.querySelector('#sunset');
 
 const myKey = "901f17cccf19265d59af8f3c97819633"
 const myLat = "39.814176"
@@ -41,6 +43,19 @@ function displayResults(data) {
   highTemp.textContent = `${data.main.temp_max}°F`;
   lowTemp.textContent = `${data.main.temp_min}°F`;
   humidity.textContent = `${data.main.humidity}%`;
+
+  const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString([], {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  sunrise.textContent = sunriseTime;
+  sunset.textContent = sunsetTime;
 }
 
 // ---------------- FORECAST ----------------

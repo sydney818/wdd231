@@ -277,6 +277,10 @@ footer {
     border-bottom: 8px solid var(--accent2);
 }
 
+.weather-card .label {
+  font-weight: bold;
+}
+
 .weather-flex {
     display: flex;
     align-items: flex-start;   
@@ -298,9 +302,6 @@ footer {
 }
 
 
-#forecast-cards img {
-    display: none;
-}
 
 .forecast-card h3{
   background-color: var(--primary);
@@ -309,6 +310,7 @@ footer {
   margin: -1rem -1rem 1rem -1rem;
   border-bottom: 8px solid var(--accent2);
 }
+
 
 .forecast-card {
   padding: 1rem;
