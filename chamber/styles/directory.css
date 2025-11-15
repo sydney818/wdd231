@@ -6,6 +6,10 @@
   max-width: 100%;
 }
 
+main {
+  border-bottom: 6px solid var(--accent2);
+}
+
 main h1 {
   background-color: var(--primary);
   color: var(--text);
@@ -13,7 +17,10 @@ main h1 {
   margin: 0;
   width: 100%;
   text-align: center;
+  border-top: 6px solid var(--accent2);
 }
+
+
 
 .view-buttons {
   text-align: center;
@@ -53,6 +60,7 @@ main h1 {
   color: var(--primary);
   margin-bottom: 1rem;
   box-shadow: 5px 5px 11px rgba(8, 8, 8, 0.5);
+  
 }
 
 
