@@ -30,7 +30,7 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  currentTemp.textContent = `${data.main.temp}°F`;
 
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
@@ -38,8 +38,8 @@ function displayResults(data) {
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 
-  highTemp.innerHTML = `${data.main.temp_max}&deg;F`;
-  lowTemp.innerHTML = `${data.main.temp_min}&deg;F`;
+  highTemp.textContent = `${data.main.temp_max}°F`;
+  lowTemp.textContent = `${data.main.temp_min}°F`;
   humidity.textContent = `${data.main.humidity}%`;
 }
 

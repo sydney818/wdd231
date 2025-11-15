@@ -98,14 +98,12 @@ header {
   background-color: var(--background2);
   padding: 0.5rem 0;
   z-index: 1000;
-  border-radius: 8px;
 }
 
 
 .navigation.show {
   display: block;
 }
-
 
 
 .navigation ul {
@@ -149,6 +147,7 @@ footer {
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
+  border-top: 20px solid var(--primary);
 }
 
 .footer-container {
@@ -157,7 +156,6 @@ footer {
   gap: 2rem;
   justify-content: space-between;
   text-align: left;
-  border-top: 20px solid var(--accent2);
 }
 
 .contact {
@@ -194,17 +192,18 @@ footer {
 
 
 
-
-
-
 /************* HOME PAGE *****************/
 
 
 .hero {
-  position: relative;    /* <-- this is the important part */
+  position: relative;   
   width: 100%;
   border-top: 8px solid var(--accent2);
   margin-bottom: 0;
+}
+
+h1 {
+  margin-left: 1rem;
 }
 
 .hero-img {
@@ -213,10 +212,22 @@ footer {
 }
 
 
+
+.hero-text-box {
+  padding: 1.5rem;
+}
+
+.hero-text-box h1 {
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+}
+
+.hero-text-box p {
+  margin-bottom: 1rem;
+}
+
 .hero .cta {
-  position: absolute;
-  bottom: 200px;     /* adjust where you want it */
-  right: 100px;      /* adjust for placement */
+  display: inline-block;
   background-color: var(--accent2);
   color: var(--text2);
   padding: 0.6rem 1.2rem;
@@ -229,7 +240,6 @@ footer {
   background-color: var(--accent1);
 }
 
-
 /******************** Home Section **********************/
 
 
@@ -237,19 +247,64 @@ footer {
 .info-grid {
   display: grid;
   grid-template-columns: 1fr ; 
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
 }
 
 .events-card,
 .weather-card,
 .forecast-card {
-  background: var(--accent1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--accent);
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin-right: 2rem;
+  border: var(--primary);
+  border-radius: 6px;
+  border: 2px solid var(--primary);
 }
 
+/**************** WEATHER CARD ********************/
+
+
+/* HEADER */
+.weather-card h3 {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    margin: -1rem -1rem 1rem -1rem;
+    margin-bottom: 1rem;
+    border-bottom: 8px solid var(--accent2);
+}
+
+.weather-flex {
+    display: flex;
+    align-items: flex-start;   
+    gap: 2rem;                 
+    margin-top: 1rem;
+
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -0.5rem;  
+}     
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.weather-temp {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
 
 
 #forecast-cards img {
@@ -260,19 +315,27 @@ footer {
   background-color: var(--primary);
   color: var(--text);
   padding: 0.75rem 1rem;
-  
   margin: -1rem -1rem 1rem -1rem;
+  border-bottom: 8px solid var(--accent2);
 }
 
 .forecast-card {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  
 }
 
 .forecast-card p,
 .forecast-card span {
   font-size: 0.9rem;
-  line-height: 1.2;
+  line-height: 1;
 }
+
+#forecast-cards {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #forecast-cards > div {
   margin-bottom: 0.5rem;
@@ -280,67 +343,82 @@ footer {
 
 
 
-/* EVENTS TABLE */
-
-
+/* EVENTS CARD */
+.events-card {
+  background: var(--accent1);
+  padding: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  overflow: hidden; 
+}
 
 .events-card h3 {
   background-color: var(--primary);
   color: var(--text);
-  padding: 0.75rem 1rem;
-  
-  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.8rem 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+
 }
+
 
 #events-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0;
   font-size: 1rem;
 }
 
-#events-table th,
-#events-table td {
-  padding: 0.75rem 1rem;
-  text-align: left;
-}
-
-/* Hide table headers on small screens */
-#events-table th {
+#events-table thead {
   display: none;
 }
 
-/* Add borders around cells */
+
 #events-table td {
-  border: 1px solid var(--secondary);
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #d6d0c5;
 }
 
-/* Row striping */
-#events-table tr:nth-child(even) {
-  background-color: var(--accent1);
+
+#events-table tr:last-child td {
+  border-bottom: none;
 }
+
 
 #events-table tr:nth-child(odd) {
-  background-color: var(--background2);
+  background-color: #f7f4ed;
+}
+
+#events-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+
+#events-table td:first-child {
+  font-weight: 600;
+}
+
+
+#events-table td:last-child {
+  white-space: nowrap;
 }
 
 
 /*********** spotlight card *************/
 
-.spotlights {
-  margin-top: 2rem;
+#spotlights {
+  grid-column: 1 / -1;  
+  border-bottom: 8px solid var(--accent2);
+  padding: 1rem;
 }
 
-#spotlight-container {
-  display: grid;
-  gap: 1rem;
-}
 
 .spotlight-card {
-  background: var(--accent1);
+  background: var(--accent);
   padding: 1rem;
-  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  margin-top: 1rem;
+  border: 2px solid var(--primary);
 }
 
 .spotlight-card a {

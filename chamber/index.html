@@ -57,11 +57,15 @@
 <main>
 
     <!-- HERO -->
-    <div class="hero">
-        <img src="images/Mona2-2.jpg" alt="hero image" class="hero-img">
+    <section class="hero">
+        <img class="hero-img" src="images/Mona2-2.jpg" alt="Juab County center">
 
-        <a class="cta" href="#">Join Now</a>
-    </div>
+        <div class="hero-text-box">
+            <h1>Supporting Local Businesses</h1>
+            <p>Join the Juab County Chamber of Commerce and help our community grow</p>
+            <a href="join.html" class="cta">Join the Chamber</a>
+        </div>
+    </section>
 
     <!-- HOME SECTION -->
     <section class="home-section">
@@ -81,11 +85,44 @@
                             <th>Dates</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr><td>Tree Fest</td><td>Juab County Courthouse</td><td>Nov 17–Dec 1</td></tr>
-                        <tr><td>Tree Lighting</td><td>Juab County Courthouse</td><td>Nov 29</td></tr>
-                        <tr><td>Christmas Parade</td><td>Juab County Courthouse</td><td>Nov 29</td></tr>
-                    </tbody>
+                      <tbody>
+                          <tr>
+                              <td>Tree Fest</td>
+                              <td>Juab County Courthouse</td>
+                              <td>Nov 17–Dec 1</td>
+                          </tr>
+
+                          <tr>
+                              <td>Tree Lighting Ceremony</td>
+                              <td>Nephi City Park</td>
+                              <td>Nov 29</td>
+                          </tr>
+
+                          <tr>
+                              <td>Christmas Parade</td>
+                              <td>Main Street, Nephi</td>
+                              <td>Nov 29</td>
+                          </tr>
+
+                          <tr>
+                              <td>Winter Market</td>
+                              <td>County Fairgrounds</td>
+                              <td>Dec 2</td>
+                          </tr>
+
+                          <tr>
+                              <td>Holiday Craft Night</td>
+                              <td>Nephi Library</td>
+                              <td>Dec 5</td>
+                          </tr>
+
+                          <tr>
+                              <td>Chamber Breakfast</td>
+                              <td>Juab Senior Center</td>
+                              <td>Dec 12</td>
+                          </tr>
+
+                      </tbody>
                 </table>
             </section>
 
@@ -93,12 +130,18 @@
             <!-- WEATHER CARD -->
             <section id="weather" class="weather-card">
                 <h3>Current Weather</h3>
-                <img id="weather-icon" alt="weather icon">
-                <p><span id="temp"></span>&degF</p>
-                <p id="description"></p>
-                <p>High: <span id="high"></span></p>
-                <p>Low: <span id="low"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
+
+                <div class="weather-flex">
+                    <img id="weather-icon" alt="weather icon">
+
+                    <div class="weather-info">
+                        <p class="weather-temp"><span id="temp"></span></p>
+                        <p id="description"></p>
+                        <p>High: <span id="high"></span>°F</p>
+                        <p>Low: <span id="low"></span>°F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                    </div>
+                </div>
             </section>
 
             <!-- FORECAST CARD -->
@@ -108,7 +151,6 @@
             </section>
 
             <section id="spotlights" class="spotlights-caad">
-              <h3 >Member Spotlights</h3>
               <div id="spotlight-container"></div>
             </section>
 
@@ -120,27 +162,35 @@
 
     
 
-<footer class="footer-container">
+<footer>
+  <div class="footer-container">
 
-  <div class="contact-info">
-    <p class="contact">Juab County Chamber of Commerce</p>
-    <p>347 N Main St, Nephi, UT 84648</p>
-    <p>435-888-1212</p>
-    <p>juabchamber@gmail.com</p>
+    <div class="contact-info">
+      <p class="contact">Juab County Chamber of Commerce</p>
+      <p>347 N Main St, Nephi, UT 84648</p>
+      <p>435-888-1212</p>
+      <p>juabchamber@gmail.com</p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" width="50" height="50">
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube.svg" alt="YouTube" width="50" height="50">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>WDD231 | Sydney Anderson</p>
+      <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+
   </div>
-
-  <div class="social">
-    <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50"></a>
-    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="50" height="50"></a>
-    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="50" height="50"></a>
-  </div>
-
-  <div class="footer-info">
-    <p>WDD231 | Sydney Anderson</p>
-    <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
-    <p id="lastModified"></p>
-  </div>
-
 </footer>
 
 
