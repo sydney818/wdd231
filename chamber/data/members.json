@@ -4,48 +4,55 @@
     "address": "2276 S 425 W, Nephi UT 84648",
     "phone": "435-555-1200",
     "website": "https://BarWSteakhouse.com",
-    "level": 1
+    "level": 1,
+    "logo": "images/barW.png"
   },
   {
     "name": "Branded Barbers Barbershop",
     "address": "31 N Main St, Nephi UT 84648",
     "phone": "435-825-1501",
     "website": "https://Brandedbarbers.com",
-    "level": 2
+    "level": 2,
+    "logo": "images/brandedbarbers.jpeg"
   },
   {
     "name": "The Green Gypsy Shop",
     "address": "27 N Main St, Nephi UT 84648",
     "phone": "435-580-9923",
     "website": "https://greengypsy.com",
-    "level": 3
+    "level": 3,
+    "logo": "images/greengypsy.png"
   },
   {
     "name": "Choice Hardware & Home Center",
     "address": "3700 Old Hwy 91, Mona, UT 84645",
     "phone": "(800) 371-9486",
     "website": "https://choicehardware.com",
-    "level": 2
+    "level": 2,
+    "logo": "images/choice.png"
   },
   {
     "name": "Lvender Farms",
     "address": "91 E Center St, Nephi UT 84648",
     "phone": "435-623-0261",
     "website": "https://nephifloral.com",
-    "level": 3
+    "level": 3,
+    "logo": "images/laveder.jpg"
   },
   {
     "name": "Nebo Market",
     "address": "965 N Main St, Nephi UT 84648",
     "phone": "435-623-6125",
     "website": "https://nebomarket.com",
-    "level": 3
+    "level": 3,
+    "logo": "images/nebo.jpeg"
   },
   {
     "name": "Lisa's County Kitchen",
     "address": "735 S Main St, Nephi UT 84648",
     "phone": "435-623-0079",
-    "website": "https://nebomarket.com",
-    "level": 1
+    "website": "https://lisaskitchen.com",
+    "level": 1,
+    "logo": "images/kitchen.webp"
   }
 ]

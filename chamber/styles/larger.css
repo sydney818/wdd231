@@ -1,24 +1,28 @@
 
 
 /* Larger screen styles */
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 50rem) {
 
-  .container {
-    max-width: 1200px;
+  header, main, nav, footer {
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
-  }
+}
 
-  .navigation {
-    display: block;
-    background-color: transparent;
-  }
+
+.navigation {
+   display: block; 
+   position: static;
+   width: auto;
+   background:none;
+   margin: 0;
+   padding: 0;
+}
 
   .navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -31,21 +35,21 @@
 
   header {
     display: grid;
-    grid-template-columns: auto 1fr auto; /* branding | spacer | nav/hamburger */
+    grid-template-columns: auto 1fr auto; 
     align-items: center;
     column-gap: 24px;
     background-color: var(--background2);
     color: var(--text2);
     padding: 2rem;
-    border-bottom: 20px solid var(--accent2);
   }
   
   /*********** HOME PAGE *********************/
 
   .info-grid {
-    grid-template-columns: 2fr 1fr 1fr;
-    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;  
   }
+}
 
   /* hide hamburger on large screens */
   .hamburger {
@@ -60,7 +64,7 @@
   .footer-social {
      margin: 1rem 0;
   }
-}
+
 
 
 
@@ -80,5 +84,10 @@
   }
 }
 
+/****************** spotlight ************/
 
+#spotlights {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
