@@ -98,10 +98,10 @@ function displayForecast(data) {
 
     card.innerHTML = `
       <h4>${date}</h4>
-      <img src="${icon}" alt="${day.weather[0].description}">
       <p>${temp}</p>
       <p>${day.weather[0].description}</p>
     `;
+
 
     forecastContainer.appendChild(card);
   });
