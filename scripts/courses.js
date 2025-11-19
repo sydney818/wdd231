@@ -1,5 +1,3 @@
-
-
 const courses = [
     {
         subject: 'CSE',
@@ -78,63 +76,79 @@ const courses = [
         ],
         completed: false
     }
-]
-
-
+];
 
 const courseList = document.getElementById('courseList');
 const totalCredits = document.getElementById('totalCredits');
+const courseDetails = document.getElementById('course-details');
 
-
+// Build and display the course cards
 function displayCourses(filteredCourses) {
+    // clear current courses
+    courseList.innerHTML = '';
 
-  courseList.innerHTML = '';
+    // calculate total credits
+    const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
 
+    // create a card for each course
+    filteredCourses.forEach(course => {
+        const div = document.createElement('div');
+        div.classList.add('course');
 
-  if (filteredCourses.length === 0) {
-    courseList.textContent = "No courses found.";
-    totalCredits.textContent = "";
-    return;
-  }
+        if (course.completed) {
+            div.classList.add('completed');
+        }
 
-  // Calculate total credits 
-  const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+        div.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+            <p>${course.title}</p>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+        `;
 
-  // Loop each course 
-  filteredCourses.forEach(course => {
-    const div = document.createElement('div');
-    div.classList.add('course');
+        div.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
 
-   
-    if (course.completed) div.classList.add('completed');
+        courseList.appendChild(div);
+    });
 
-    div.innerHTML = `
-      <h3>${course.subject} ${course.number}</h3>
-      <p>${course.title}</p>
-      <p><strong>Credits:</strong> ${course.credits}</p>
-    `;
-
-    courseList.appendChild(div);
-  });
-
-
-  totalCredits.textContent = `Total credits for courses listed: ${total}`;
+    totalCredits.textContent = `Total credits for courses listed: ${total}`;
 }
 
-// --- BUTTON FILTERS ---
+// Show the modal with details for one course
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeButton = document.getElementById('closeModal');
+    closeButton.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// Filter buttons
 document.getElementById('all').addEventListener('click', () => {
-  displayCourses(courses);
+    displayCourses(courses);
 });
 
 document.getElementById('cse').addEventListener('click', () => {
-  const cseCourses = courses.filter(course => course.subject === 'CSE');
-  displayCourses(cseCourses);
+    const cseCourses = courses.filter(course => course.subject === 'CSE');
+    displayCourses(cseCourses);
 });
 
 document.getElementById('wdd').addEventListener('click', () => {
-  const wddCourses = courses.filter(course => course.subject === 'WDD');
-  displayCourses(wddCourses);
+    const wddCourses = courses.filter(course => course.subject === 'WDD');
+    displayCourses(wddCourses);
 });
 
-
-
+// show all courses when the page first loads
+displayCourses(courses);

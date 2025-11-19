@@ -1,0 +1,56 @@
+
+.join-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+fieldset {
+  border: 2px solid var(--accent2, #888);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+legend {
+  padding: 0 .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary, #333);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: .7rem;
+  margin-top: .3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: .75rem 1.5rem;
+  background: var(--primary, #006d77);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--accent2, #004f55);
+}
