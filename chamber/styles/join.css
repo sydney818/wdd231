@@ -1,8 +1,16 @@
-
+/* -------------------------------
+   FORM STYLES
+--------------------------------*/
 .join-form {
   max-width: 700px;
   margin: 2rem auto;
   padding: 1.5rem;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 fieldset {
@@ -53,4 +61,115 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: var(--accent2, #004f55);
+}
+
+/* ------------- MEMBERSHIP CARDS ------------------*/
+#membership-cards {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.member-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp .8s forwards;
+}
+
+.member-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: var(--accent2);
+  border-radius: 10px 10px 0 0;
+}
+
+.member-card h3 {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.member-card:nth-child(1) { animation-delay: .2s; }
+.member-card:nth-child(2) { animation-delay: .4s; }
+.member-card:nth-child(3) { animation-delay: .6s; }
+.member-card:nth-child(4) { animation-delay: .8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.member-card button {
+  margin-top: .75rem;
+  padding: .5rem 1rem;
+  background: var(--primary, #006d77);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.member-card button:hover {
+  background: var(--accent2, #004f55);
+}
+
+/* -------------------------------
+   MODALS / DIALOGS
+--------------------------------*/
+dialog {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.modal-content {
+    background: var(--accent1, #fff);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+main {
+    border-top: 6px solid var(--accent2); 
+    border-bottom: 6px solid var(--accent2); 
+}
+
+
+/* ------------- THANK YOU PAGE ------------------*/
+
+.thankyou ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 1.5rem; /* indent bullets */
+  font-size: 1.1rem;
+  line-height: 1.6;
 }

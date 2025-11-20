@@ -9,6 +9,24 @@
 }
 
 
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* side-by-side */
+    gap: 2rem;
+    align-items: start;
+}
+
+    #join-form {
+        width: 100%;
+    }
+
+    #membership-cards {
+        width: 100%;
+        padding: 4rem;
+    }
+
+
+
   /* hide hamburger on large screens */
   .hamburger {
     display: none;
@@ -105,6 +123,17 @@
   .footer-social {
      margin: 1rem 0;
   }
+
+
+  /************** JOIN PAGE ******************/
+
+
+
+
+
+
+
+
 
 
 

@@ -23,8 +23,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">  
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/join.css">
 
     <!-- Scripts -->
     <script src="scripts/global.js" defer></script>
@@ -42,9 +42,9 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="join.html"  class="active">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
@@ -52,56 +52,137 @@
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
         </header>
         <main>
-            <div id="join-form">
-                <form method="GET" action="thankyou.html" class="join-form">
-                    <fieldset>
-                        <legend>Join the Chamber</legend>
-                        <label for="fname">First Name <span class="required">*</span></label>
-                        <input type="text" id="fname" name="fname" title="Enter your first name" autocomplete="given-name" required>
 
-                        <label for="lname">Last Name <span class="required">*</span></label>
-                        <input type="text" id="lname" name="lname" title="Enter your last name" autocomplete="family-name" required>
+            <!-- TWO-COLUMN LAYOUT -->
+            <div class="join-layout">
 
-                        <label for="orgtitle">Organizational Title</label>
-                        <input type="text" id="orgtitle" name="orgtitle" title="Enter your title within your organization" autocomplete="organization-title" pattern="^[A-Za-z -]{7,}$" required>
+                <!-- FORM SECTION -->
+                <div id="join-form">
+                    <form method="GET" action="thankyou.html" class="join-form">
+                        <fieldset>
+                            <legend>Join the Chamber</legend>
 
-                        <label for="email">Email <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="example@email.com" required="">
+                            <label for="fname">First Name <span class="required">*</span></label>
+                            <input type="text" id="fname" name="fname" autocomplete="given-name" required>
 
-                        <label for="phone">Mobile Phone Number <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required="">
+                            <label for="lname">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lname" name="lname" autocomplete="family-name" required>
 
-                        <label for="org-name">Business / Organization Name <span class="required">*</span></label>
-                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                            <label for="orgtitle">Organizational Title</label>
+                            <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title"
+                                pattern="^[A-Za-z -]{7,}$" required>
 
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                placeholder="example@email.com" required>
 
-                        <label for="membership">Membership Level</label>
-                        <select id="membership" name="membership" title="Choose a membership level" required>
-                            <option value="">Select Level</option>
-                            <option value="np">NP Membership (Non-profit)</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
+                            <label for="phone">Mobile Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
+                            <label for="organization">Business / Organization Name <span class="required">*</span></label>
+                            <input type="text" id="organization" name="organization" autocomplete="organization" required>
 
+                            <label for="membership">Membership Level</label>
+                            <select id="membership" name="membership" required>
+                                <option value="">Select Level</option>
+                                <option value="np">NP Membership (Non-profit)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
 
-                        <label for="description">Please provide a brief description of your organization</label>
-                        <textarea id="description" name="description" title="Describe your business or organization" rows="4"></textarea>
+                            <label for="description">Please provide a brief description of your organization</label>
+                            <textarea id="description" name="description" rows="4"></textarea>
 
+                            <input type="hidden" name="time-stamp" id="time-stamp">
 
-                        <input type="hidden" name="time-stamp" id="time-stamp" title="time-stamp" value="2025-11-19T05:03:26.349Z">
-                        <button type="submit">Join Today</button>
-                    </fieldset>
-                </form>
+                            <button type="submit">Join Today</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- MEMBERSHIP CARDS -->
+                <section id="membership-cards">
+
+                    <div class="member-card" data-modal="np-modal">
+                        <h3>NP Membership</h3>
+                        <button type="button" class="open-modal">View Benefits</button>
+                    </div>
+
+                    <div class="member-card" data-modal="bronze-modal">
+                        <h3>Bronze Membership</h3>
+                        <button type="button" class="open-modal">View Benefits</button>
+                    </div>
+
+                    <div class="member-card" data-modal="silver-modal">
+                        <h3>Silver Membership</h3>
+                        <button type="button" class="open-modal">View Benefits</button>
+                    </div>
+
+                    <div class="member-card" data-modal="gold-modal">
+                        <h3>Gold Membership</h3>
+                        <button type="button" class="open-modal">View Benefits</button>
+                    </div>
+
+                </section>
             </div>
 
+            <!-- MODALS -->
+            <dialog id="np-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close" aria-label="Close Modal">❌</button>
+                    <h2>NP Membership Benefits</h2>
+                    <p><strong>Price:</strong> Free</p>
+                    <ul>
+                        <li>Free directory listing</li>
+                        <li>Invitations to Chamber events</li>
+                        <li>Basic community support resources</li>
+                    </ul>
+                </div>
+            </dialog>
 
-            
+            <dialog id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close" aria-label="Close Modal">❌</button>
+                    <h2>Bronze Membership Benefits</h2>
+                    <p><strong>Price:</strong> $100 / year</p>
+                    <ul>
+                        <li>Directory listing with contact info</li>
+                        <li>Access to networking lunches</li>
+                        <li>Member-only event discounts</li>
+                    </ul>
+                </div>
+            </dialog>
 
+            <dialog id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close" aria-label="Close Modal">❌</button>
+                    <h2>Silver Membership Benefits</h2>
+                    <p><strong>Price:</strong> $250 / year</p>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Business spotlight on Chamber website</li>
+                        <li>Free workshop admission</li>
+                    </ul>
+                </div>
+            </dialog>
 
+            <dialog id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close" aria-label="Close Modal">❌</button>
+                    <h2>Gold Membership Benefits</h2>
+                    <p><strong>Price:</strong> $500 / year</p>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Premium homepage placement</li>
+                        <li>Free booth at Chamber events</li>
+                    </ul>
+                </div>
+            </dialog>
 
         </main>
+
+
         <footer>
             <div class="footer-container">
 
@@ -130,7 +211,6 @@
                 <p id="lastModified"></p>
             </div>
 
-            </div>
         </footer>
     </div>
 
