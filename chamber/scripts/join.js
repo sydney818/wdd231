@@ -6,8 +6,10 @@ if (timestampField) {
 
 
 // THANK YOU HTML //
-
 document.addEventListener("DOMContentLoaded", () => {
+
+    const timestampSpan = document.getElementById("timestamp");
+    if (!timestampSpan) return;  
 
     const urlParams = new URLSearchParams(window.location.search);
 
@@ -16,8 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("email").textContent = urlParams.get("email");
     document.getElementById("phone").textContent = urlParams.get("phone");
     document.getElementById("organization").textContent = urlParams.get("organization");
-    document.getElementById("timestamp").textContent = urlParams.get("time-stamp");
-
+    timestampSpan.textContent = urlParams.get("time-stamp");
 });
 
 
