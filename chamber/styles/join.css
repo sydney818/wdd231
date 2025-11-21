@@ -65,9 +65,9 @@ button[type="submit"]:hover {
 
 /* ------------- MEMBERSHIP CARDS ------------------*/
 #membership-cards {
-  margin-top: 2rem;
   display: grid;
   gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .member-card {
@@ -129,20 +129,12 @@ button[type="submit"]:hover {
   background: var(--accent2, #004f55);
 }
 
-/* -------------------------------
-   MODALS / DIALOGS
---------------------------------*/
-dialog {
-    border: none;
-    padding: 0;
-    background: transparent;
-}
+/* ------------ MODALS / DIALOGS ------------------*/
 
 .modal-content {
     background: var(--accent1, #fff);
     padding: 2rem;
-    border-radius: 10px;
-    border: 2px solid var(--primary);
+
     max-width: 500px;
     margin: auto;
     position: relative;
@@ -166,10 +158,43 @@ main {
 
 /* ------------- THANK YOU PAGE ------------------*/
 
-.thankyou ul {
-  list-style: none;
-  margin-top: 1rem;
-  padding-left: 1.5rem; /* indent bullets */
-  font-size: 1.1rem;
-  line-height: 1.6;
+.thankyou {
+  padding: 5rem;
+}
+
+
+main.thankyou h1 {
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--accent2);
+  text-align: center;
+}
+
+.thankyou p {
+  text-align: center;
+}
+
+main.thankyou h2 {
+  margin: 2rem 0 1rem;
+}
+
+main.thankyou ul {
+  list-style: none;     
+  padding-left: 0;
+}
+
+main.thankyou li {
+  margin-bottom: 0.25rem;
+}
+
+.join-h1 {
+  text-align: center;
+}
+
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+    color: var(--primary);
 }

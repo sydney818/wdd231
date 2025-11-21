@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | Juab County Chamber of Commerce</title>
+    <meta name="description" content="Join the Juab County Chamber of Commerce. View our membership offers.">
+    <meta name="author" content="Sydney Anderson">
+    <title>Thank you | Juab County Chamber of Commerce</title>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
@@ -11,7 +13,7 @@
     <!-- OpenGraph -->
     <meta property="og:title" content="Join the Juab County Chamber of Commerce">
     <meta property="og:description" content="Become a member, fill out the form, connect with local businesses, and support community growth.">
-    <meta property="og:image" content="https://sydney818.github.io/chamber/images/juab-directory-share.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sydney818/chamber/main/images/juab-directory-share.jpg">
     <meta property="og:url" content="https://sydney818.github.io/chamber/join.html">
     <meta property="og:type" content="website">
 
@@ -52,6 +54,7 @@
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
         </header>
         <main>
+            <h1>Join the Chamber</h1>
 
             <!-- TWO-COLUMN LAYOUT -->
             <div class="join-layout">
@@ -63,24 +66,24 @@
                             <legend>Join the Chamber</legend>
 
                             <label for="fname">First Name <span class="required">*</span></label>
-                            <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+                            <input type="text" id="fname" name="fname" autocomplete="given-name" title="Enter your first name" required>
 
                             <label for="lname">Last Name <span class="required">*</span></label>
-                            <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+                            <input type="text" id="lname" name="lname" autocomplete="family-name" title="Enter your last name" required>
 
                             <label for="orgtitle">Organizational Title</label>
                             <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title"
-                                pattern="^[A-Za-z -]{7,}$" required>
+                                pattern="^[A-Za-z -]{7,}$" title="Enter your title within the organization (letters, spaces, hyphens only, 7+ characters)" required>
 
                             <label for="email">Email <span class="required">*</span></label>
                             <input type="email" id="email" name="email" autocomplete="email"
-                                placeholder="example@email.com" required>
+                                placeholder="example@email.com" title="Enter your email address" required>
 
                             <label for="phone">Mobile Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter your mobile phone number" required>
 
                             <label for="organization">Business / Organization Name <span class="required">*</span></label>
-                            <input type="text" id="organization" name="organization" autocomplete="organization" required>
+                            <input type="text" id="organization" name="organization" autocomplete="organization" title="Enter your business or organization name" required>
 
                             <label for="membership">Membership Level</label>
                             <select id="membership" name="membership" required>
@@ -92,7 +95,7 @@
                             </select>
 
                             <label for="description">Please provide a brief description of your organization</label>
-                            <textarea id="description" name="description" rows="4"></textarea>
+                            <textarea id="description" name="description" rows="4" title="Briefly describe your business or organization"></textarea>
 
                             <input type="hidden" name="time-stamp" id="time-stamp">
 
@@ -186,31 +189,32 @@
         <footer>
             <div class="footer-container">
 
-            <div class="contact-info">
-                <p class="contact">Juab County Chamber of Commerce</p>
-                <p>347 N Main St, Nephi, UT 84648</p>
-                <p>435-888-1212</p>
-                <p>juabchamber@gmail.com</p>
-            </div>
+                <div class="contact-info">
+                    <p class="contact">Juab County Chamber of Commerce</p>
+                    <p>347 N Main St, Nephi, UT 84648</p>
+                    <p>435-888-1212</p>
+                    <p>juabchamber@gmail.com</p>
+                </div>
 
-            <div class="social">
-                <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook" width="50" height="50">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                <img src="images/youtube.svg" alt="YouTube" width="50" height="50">
-                </a>
-            </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook" width="50" height="50">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube" width="50" height="50">
+                    </a>
+                </div>
 
-            <div class="footer-info">
-                <p>WDD231 | Sydney Anderson</p>
-                <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
-                <p id="lastModified"></p>
+                <div class="footer-info">
+                    <p>WDD231 | Sydney Anderson</p>
+                    <p>&copy;<span id="currentyear"></span>Juab County Chamber of Commerce</p>
+                    <p id="lastModified"></p>
+                </div>
+        
             </div>
-
         </footer>
     </div>
 

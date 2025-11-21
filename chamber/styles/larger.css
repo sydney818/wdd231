@@ -11,7 +11,7 @@
 
 .join-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* side-by-side */
+    grid-template-columns: 1fr 1fr; 
     gap: 2rem;
     align-items: start;
 }
@@ -125,7 +125,6 @@
   }
 
 
-  /************** JOIN PAGE ******************/
 
 
 
