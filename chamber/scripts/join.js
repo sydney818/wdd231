@@ -5,13 +5,16 @@ if (timestampField) {
 }
 
 
-// THANK YOU HTML //
-
+// THANK YOU PAGE ONLY //
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Only run if this page contains thank-you span elements
+    const fnameSpan = document.getElementById("fname");
+    if (!fnameSpan) return;   // stop if not on thankyou.html
 
     const urlParams = new URLSearchParams(window.location.search);
 
-    document.getElementById("fname").textContent = urlParams.get("fname");
+    fnameSpan.textContent = urlParams.get("fname");
     document.getElementById("lname").textContent = urlParams.get("lname");
     document.getElementById("email").textContent = urlParams.get("email");
     document.getElementById("phone").textContent = urlParams.get("phone");
