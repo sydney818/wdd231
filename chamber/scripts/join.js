@@ -5,15 +5,9 @@ if (timestampField) {
 }
 
 
-// THANK YOU PAGE ONLY //
+// THANK YOU HTML //
+
 document.addEventListener("DOMContentLoaded", () => {
-
-    const requiredIds = ["fname", "lname", "email", "phone", "organization", "timestamp"];
-
-   
-    const allExist = requiredIds.every(id => document.getElementById(id));
-
-    if (!allExist) return; 
 
     const urlParams = new URLSearchParams(window.location.search);
 
@@ -23,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("phone").textContent = urlParams.get("phone");
     document.getElementById("organization").textContent = urlParams.get("organization");
     document.getElementById("timestamp").textContent = urlParams.get("time-stamp");
+
 });
 
 
