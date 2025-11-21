@@ -8,13 +8,14 @@ if (timestampField) {
 // THANK YOU PAGE ONLY //
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Only run if this page contains thank-you span elements
+  
     const fnameSpan = document.getElementById("fname");
-    if (!fnameSpan) return;   // stop if not on thankyou.html
+    if (!fnameSpan) return;
 
     const urlParams = new URLSearchParams(window.location.search);
 
-    fnameSpan.textContent = urlParams.get("fname");
+   
+    document.getElementById("fname").textContent = urlParams.get("fname");
     document.getElementById("lname").textContent = urlParams.get("lname");
     document.getElementById("email").textContent = urlParams.get("email");
     document.getElementById("phone").textContent = urlParams.get("phone");
