@@ -1,0 +1,42 @@
+/* -------- ROOT VARIABLES -------- */
+:root {
+  
+  --gold: #C2B490;    
+  --black: #000000;
+  --burgundy: #7A1C1C;
+  --accent1: #E4DECD;       
+
+  --font-head: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000; /* text */
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+h2 {
+    color: var(--burgundy);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 1rem;
+}
+
+header {
+  background-color: var(--burgundy); 
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main p, main li {
+  font-size: 1.1rem;
+}
+
+main {
+  background-color: #C2B49022; 
+  padding: 1rem;
+  border-radius: 8px;
+}
