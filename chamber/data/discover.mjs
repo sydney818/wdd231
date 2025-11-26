@@ -5,7 +5,7 @@
     "address": "27020 W Sand Mountain Road, Eureka, UT 84628",
     "cost": "Day-use and camping fees apply (BLM managed)",
     "description": "A massive 60,000-acre dune field perfect for ATV/UTV riding, sandboarding, camping, and exploring desert landscapes.",
-    "photourl": "images/dunes.webp"
+    "photoURL": "images/dunes.webp"
   },
 
   {

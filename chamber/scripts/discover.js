@@ -1,3 +1,75 @@
-
+// ======================================
+// IMPORT JSON DATA
+// ======================================
 import { places } from "../data/discover.mjs";
-console.log(places)
+
+
+
+const showHere = document.querySelector("#allplaces");
+
+function displayItems(list) {
+    list.forEach(x => {
+
+        const card = document.createElement("div");
+        card.classList.add("place-card");
+
+        // Image
+        const photo = document.createElement("img");
+        photo.src = x.photoURL;
+        photo.alt = x.name;
+        card.appendChild(photo);
+
+        // Title
+        const title = document.createElement("h2");
+        title.textContent = x.name;
+        card.appendChild(title);
+
+        // Address
+        const address = document.createElement("address");
+        address.textContent = x.address;
+        card.appendChild(address);
+
+        // Description
+        const desc = document.createElement("p");
+        desc.textContent = x.description;
+        card.appendChild(desc);
+
+        // Button
+        const btn = document.createElement("button");
+        btn.textContent = "Learn More";
+        card.appendChild(btn);
+
+        showHere.appendChild(card);
+    });
+}
+
+displayItems(places);
+
+
+
+const messageBox = document.querySelector("#visit-message");
+
+const lastVisit = Number(localStorage.getItem("lastVisit"));
+const now = Date.now();
+
+if (!lastVisit) {
+  
+    messageBox.textContent = "Welcome! Let us know if you have any questions.";
+} 
+else {
+    const msInDay = 1000 * 60 * 60 * 24;
+    const daysBetween = Math.floor((now - lastVisit) / msInDay);
+
+    if (daysBetween < 1) {
+        messageBox.textContent = "Back so soon! Awesome!";
+    } 
+    else if (daysBetween === 1) {
+        messageBox.textContent = "You last visited 1 day ago.";
+    } 
+    else {
+        messageBox.textContent = `You last visited ${daysBetween} days ago.`;
+    }
+}
+
+
+localStorage.setItem("lastVisit", now);

@@ -8,6 +8,11 @@
     margin: 0 auto;
 }
 
+  #allplaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 .join-layout {
     display: grid;
@@ -123,11 +128,6 @@
   .footer-social {
      margin: 1rem 0;
   }
-
-
-
-
-
 
 
 

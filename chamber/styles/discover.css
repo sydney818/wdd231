@@ -4,3 +4,55 @@ main {
     border-top: 6px solid var(--accent2); 
     border-bottom: 6px solid var(--accent2); 
 }
+
+
+#allplaces div {
+    margin: 1rem 8px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: white;
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "photo"
+        "description"
+        "address"
+        "button";
+    gap: .5rem;
+}
+
+#allplaces div h2 {
+    grid-area: header;
+    margin: 0;
+}
+
+#allplaces div img {
+    grid-area: photo;
+    border-radius: 6px;
+}
+
+#allplaces div p {
+    grid-area: description;
+    margin: .25rem 0;
+}
+
+#allplaces div address {
+    grid-area: address;
+    font-style: normal;
+    color: #555;
+}
+
+#allplaces div button {
+    grid-area: button;
+    padding: .5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+ 
+    width: fit-content; 
+}
+
+
