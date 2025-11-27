@@ -6,7 +6,7 @@
     "cost": "Day-use and camping fees apply (BLM managed)",
     "description": "A massive 60,000-acre dune field perfect for ATV/UTV riding, sandboarding, camping, and exploring desert landscapes.",
     "photoURL": "images/dunes.webp",
-    "website": "https://www.blm.gov/visit/little-sahara-recreation-area"
+    // "website": "https://www.blm.gov/visit/little-sahara-recreation-area"
   },
 
   {
@@ -15,7 +15,7 @@
     "cost": "Free",
     "description": "Spring-fed ponds great for swimming, fishing, rope swinging, paddleboarding, and relaxing under shade trees.",
     "photoURL": "images/burraston.webp",
-    "website": "https://juab.is/burraston-ponds/"
+    // "website": "https://juab.is/burraston-ponds/"
   },
   {
     "name": "Yuba Lake State Park",
@@ -23,7 +23,7 @@
     "cost": "Day-use and camping fees vary by site",
     "description": "Warm-water reservoir offering boating, beaches, fishing, camping, paddleboarding, and family-friendly water recreation.",
     "photoURL": "images/yuba.webp",
-    "website": "https://stateparks.utah.gov/parks/yuba/"
+    // "website": "https://stateparks.utah.gov/parks/yuba/"
   },
   {
     "name": "Nebo Loop Scenic Byway",
@@ -31,7 +31,7 @@
     "cost": "Free",
     "description": "A stunning mountain drive with breathtaking views, fall colors, wildlife, and access to multiple hiking trails and picnic areas.",
     "photoURL": "images/neboloop.webp",
-    "website": "https://www.utah.com/things-to-do/scenic-drives/mount-nebo-scenic-byway/"
+    // "website": "https://www.utah.com/things-to-do/scenic-drives/mount-nebo-scenic-byway/"
   },
   {
     "name": "Devil's Kitchen (Nebo Loop)",
@@ -39,7 +39,7 @@
     "cost": "Free",
     "description": "A short, easy walk to a viewpoint overlooking unique red rock formations often referred to as a 'mini Bryce Canyon.'",
     "photoURL": "images/devilskitchen.webp",
-    "website": "https://juab.is/devils-kitchen/"
+    // "website": "https://juab.is/devils-kitchen/"
   },
   {
     "name": "Mount Nebo Hiking Trails",
@@ -47,7 +47,7 @@
     "cost": "Free",
     "description": "Challenging and scenic hikes leading to the summit of the highest peak in the Wasatch Range, along with easier family-friendly trails nearby.",
     "photoURL": "images/nebohiking.webp",
-    "website": "https://nephi.utah.gov/175/Mount-Nebo"
+    // "website": "https://nephi.utah.gov/175/Mount-Nebo"
   },
   {
     "name": "Ute Stampede Rodeo (Annual Event)",
@@ -55,7 +55,7 @@
     "cost": "Ticket prices vary by event and seating",
     "description": "A long-standing community rodeo event featuring barrel racing, bull riding, parades, vendors, food, and fun for families.",
     "photoURL": "images/stampede.webp",
-    "website": "https://utestampede.com"
+    // "website": "https://utestampede.com"
   },
   {
     "name": "Historic Downtown Nephi & Local Shops",
@@ -63,6 +63,6 @@
     "cost": "Free to explore (shopping and dining vary)",
     "description": "A charming small-town main street with boutiques, bakeries, barbershops, and locally-owned businesses great for casual strolling and shopping.",
     "photoURL": "images/nephi.webp",
-    "website": "https://www.nephi.utah.gov/"
+    // "website": "https://www.nephi.utah.gov/"
   }
 ]
