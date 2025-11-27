@@ -49,15 +49,20 @@ function displayItems(list) {
 
         // showHere.appendChild(card);
 
+        // Visible button
         const btn = document.createElement("a");
         btn.href = x.website;
         btn.target = "_blank";
         btn.textContent = "Learn More";
         btn.classList.add("more-btn");
-
-        btn.setAttribute("aria-label", `Learn more about ${x.name}`);
-
         card.appendChild(btn);
+
+        // Hidden descriptive link for SEO
+        const hiddenLink = document.createElement("a");
+        hiddenLink.href = x.website;
+        hiddenLink.textContent = `Learn more about ${x.name}`;
+        hiddenLink.classList.add("visually-hidden");
+        card.appendChild(hiddenLink);
 
         showHere.appendChild(card);
     });
