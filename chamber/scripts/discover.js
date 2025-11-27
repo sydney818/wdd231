@@ -52,7 +52,7 @@ function displayItems(list) {
         const btn = document.createElement("a");
         btn.href = x.website;
         btn.target = "_blank";
-        btn.textContent = `Learn More about ${x.name}`;
+        btn.textContent = "Learn More";
         btn.classList.add("more-btn");
 
         btn.setAttribute("aria-label", `Learn more about ${x.name}`);
