@@ -18,6 +18,9 @@ function displayItems(list) {
         photo.src = x.photoURL;
         photo.alt = x.name;
 
+        photo.width = 300;
+        photo.height = 200;
+
         photo.loading = "lazy";     // ⭐ LAZY LOADING is located here      
 
         figure.appendChild(photo);
@@ -44,6 +47,7 @@ function displayItems(list) {
         btn.target = "_blank";
         btn.textContent = "Learn More";
         btn.classList.add("more-btn");
+        btn.setAttribute("aria-label", `Learn more about ${x.name}`);
         card.appendChild(btn);
 
         showHere.appendChild(card);

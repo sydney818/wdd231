@@ -80,16 +80,4 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Card hover */
-/* .place-card {
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    border: 1px solid #ccc;
-    background: white;
-    border-radius: 8px;
-}
 
-.place-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    border-color: var(--primary);
-} */
