@@ -4,13 +4,13 @@
 
 
     #allplaces div {
-        grid-template-columns: 1.1fr 1fr;
+       
         grid-template-areas:
-            "photo header"
-            "photo description"
-            "photo address"
-            "photo button";
-        align-items: start;
+            "picture title"
+            "picture desc"
+            "picture address"
+            "more more";
+   
     }
 
 }
