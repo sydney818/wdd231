@@ -47,7 +47,6 @@ function displayItems(list) {
         btn.target = "_blank";
         btn.textContent = "Learn More";
         btn.classList.add("more-btn");
-        btn.setAttribute("aria-label", `Learn more about ${x.name}`);
         card.appendChild(btn);
 
         showHere.appendChild(card);
