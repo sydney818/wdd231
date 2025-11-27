@@ -12,10 +12,14 @@ function displayItems(list) {
         card.classList.add("place-card");
 
         // Image
+        const figure = document.createElement("figure");
+
         const photo = document.createElement("img");
         photo.src = x.photoURL;
         photo.alt = x.name;
-        card.appendChild(photo);
+
+        figure.appendChild(photo);
+        card.appendChild(figure);
 
         // Title
         const title = document.createElement("h2");
