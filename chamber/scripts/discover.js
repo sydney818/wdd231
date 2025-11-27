@@ -42,24 +42,24 @@ function displayItems(list) {
         card.appendChild(desc);
 
         // Button
-        const btn = document.createElement("button");
-        btn.textContent = "Learn More";
-        btn.classList.add("more-btn");  
-        card.appendChild(btn);
-
-        showHere.appendChild(card);
-
-        // const btn = document.createElement("a");
-        // btn.href = x.website;
-        // btn.target = "_blank";
+        // const btn = document.createElement("button");
         // btn.textContent = "Learn More";
-        // btn.classList.add("more-btn");
-
-        // btn.setAttribute("aria-label", `Learn more about ${x.name}`);
-
+        // btn.classList.add("more-btn");  
         // card.appendChild(btn);
 
         // showHere.appendChild(card);
+
+        const btn = document.createElement("a");
+        btn.href = x.website;
+        btn.target = "_blank";
+        btn.textContent = "Learn More";
+        btn.classList.add("more-btn");
+
+        btn.setAttribute("aria-label", `Learn more about ${x.name}`);
+
+        card.appendChild(btn);
+
+        showHere.appendChild(card);
     });
 }
 
