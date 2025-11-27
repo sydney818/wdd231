@@ -18,8 +18,8 @@ function displayItems(list) {
         photo.src = x.photoURL;
         photo.alt = x.name;
 
-        photo.width = 300;
-        photo.height = 200;
+        // photo.width = 300;
+        // photo.height = 200;
 
         photo.loading = "lazy";     // ⭐ LAZY LOADING is located here      
 
