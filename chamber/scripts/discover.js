@@ -18,6 +18,8 @@ function displayItems(list) {
         photo.src = x.photoURL;
         photo.alt = x.name;
 
+        photo.loading = "lazy";     // ⭐ LAZY LOADING is located here      
+
         figure.appendChild(photo);
         card.appendChild(figure);
 
@@ -77,4 +79,4 @@ else {
 }
 
 
-localStorage.setItem("lastVisit", now);
+localStorage.setItem("lastVisit", now);       // ⭐ Local storage HERE
