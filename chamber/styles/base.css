@@ -46,9 +46,6 @@ header {
 }
 
 
-
-
-
 .branding {
   position: relative;
   display: flex;
@@ -77,7 +74,6 @@ header {
     color: var(--primary);
     border: none;
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
     padding-right: 1rem;
 }

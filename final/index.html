@@ -27,44 +27,114 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/global.js" defer></script>
+
 </head>
 <body>
+    <div class="page-wrap"> 
 
-    <!-- HEADER -->
-    <header>
-        <div class="branding">
-        <img src="images/home.svg" alt="Site Logo">
-        <span>Juab Girls Wrestling</span>
-        </div>
-        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
-    </header>
+        <!-- HEADER -->
+        <header>
+            <div class="branding">
+                <img src="images/wasp.webp" alt="Site Logo">
+            </div>
+            <h1 class="title">Juab Girls Wrestling</h1>
 
-    <!-- NAVIGATION -->
-    <nav id="nav-bar" class="navigation">
-        <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="chamber_project.html">Gallery</a></li>
-        <li><a href="final_project.html">About</a></li>
-        <li><a href="final_project.html">Join</a></li>
-        </ul>
-    </nav>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
 
-    <main>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        </header>
 
-    </main>
+        <main>
+            <section class="hero">
+                <img src="images/hero.webp" alt="Juab Girls Wrestling Team" class="hero-img">
 
-    <!-- FOOTER -->
-    <footer class="footer-content">
-        <div class="social">
-        <a href="https://www.linkedin.com/in/sydney-anderson-2892a32b5/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16"></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy;<span id="currentyear"></span> Juab Girls Wrestling </p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+                <div class="hero-text">
+                    <h1>JWC Girls Wrestling</h1>
+                    <p>Building strong, confident athletes on and off the mat!</p>
+                    <a href="join.html" class="btn-primary">Join the Team</a>
+                </div>
+            </section>
+
+            
+            <!-- WELCOME SECTION -->
+            <section class="welcome">
+                <h2>Welcome to Juab Girls Wrestling!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos 
+                    at vix ad putent delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. 
+                    Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu.
+                </p>
+            </section>
+
+                <!-- THREE COLUMN SECTION -->
+            <section class="three-cards">
+
+                <!-- Coaches Card -->
+                <div class="card">
+                    <h3>About the Coaches</h3>
+                    <img src="images/coach-placeholder.webp" alt="Coaches">
+                    <a class="btn-card" href="about.html">Coaches Info</a>
+                </div>
+
+                <!-- Gallery Card -->
+                <div class="card">
+                    <h3>Gallery</h3>
+                    <img src="images/gallery-placeholder.webp" alt="Gallery preview">
+                    <a class="btn-card" href="gallery.html">View Gallery</a>
+                </div>
+
+                <!-- Program Info -->
+                <div class="card">
+                    <h3>Program Info</h3>
+                    <p>
+                        Juab Girls Wrestling helps young athletes grow in confidence, discipline, and strength. 
+                        Our program supports beginners through experienced competitors in a positive, encouraging environment.
+                    </p>
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer-content">
+
+            <div class="social">
+                <a href="https://www.tiktok.com/en/" target="_blank">
+                    <img src="images/tiktok.svg" alt="TikTok">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="currentyear"></span> Juab Girls Wrestling | Website by Sydney Anderson</p>
+                <p id="lastModified"></p>
+
+                <p>
+                    <a href="attributions.html">Resource Attributions</a> |
+                    <a href="https://your-video-link.com" target="_blank">Final Project Video</a>
+                    <p id="lastModified"></p>
+                </p>
+            </div>
+
+        </footer>
+    </div> 
+
     
 </body>
 </html>
