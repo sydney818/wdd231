@@ -14,57 +14,78 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #000000; /* text */
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
-/* .page-wrap {
+.page-wrap {
   padding: 0 1rem;
   max-width: 1400px;
   margin: 0 auto;
-} */
+}
 
 
 
 /*----------------- HEADER -----------------*/
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  column-gap: 1rem;
-  color: var(--burgundy);
-  border-bottom: 10px solid var(--gold);
-  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: var(--text2);
+  border-bottom: 20px solid var(--burgundy);
 }
 
 .title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
+  color: var(--burgundy);
+  margin-left: 20rem;
 }
 
 .branding {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: .5rem;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .branding img {
-  width: 80px;
+  width: 100px;
   height: auto;
   display: block;
 }
 
+.branding span {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent2);  
+}
 
-.navigation ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin-right: 1rem;
+h1.title {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 3px;
+}
 
+
+/********************NAV******************/
+
+
+.navigation {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  right: 0;
+  background-color: white;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.navigation.show {
+  display: block;
 }
 
 .navigation a {
@@ -73,6 +94,25 @@ header {
   padding: 1rem;
   font-weight: 600;
 }
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation ul li {
+    list-style-type: none;
+}
+
+.navigation li a {
+  display: inline-block;
+  padding: .8rem 0; 
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--burgundy);
+  font-weight: 700; 
+}
+
 
 .navigation a:hover {
     text-decoration: none;
@@ -83,7 +123,7 @@ header {
 .navigation li a.active {
   border-bottom: solid 3px var(--gold);
   color: var(--black);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -110,8 +150,8 @@ header {
 /******************MAIN **********************/
 
 main {
-  border-top: solid 6px var(--burgundy);
-  border-bottom: solid 6px var(--burgundy);
+  border-top: solid 6px var(--gold);
+  border-bottom: solid 6px var(--gold);
 }
 
 /********************HOME*******************/
@@ -150,12 +190,12 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: .5rem;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -174,7 +214,7 @@ main {
 }
 
 
-/* WELCOME SECTION */
+/**************WELCOME SECTION*******************/
 .welcome {
     text-align: center;
     padding: 2rem;
@@ -190,7 +230,7 @@ main {
 /* THREE-COLUMN SECTION */
 .three-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
 }
@@ -232,8 +272,7 @@ main {
 
 footer {
     display: block;
-    background-color: var(--burgundy);
-    color: white;
+    color: var(--black);
     padding: 1rem 1rem;
     margin-top: 3rem;
 }
@@ -241,13 +280,11 @@ footer {
 .footer-content {
     margin: auto;
     text-align: center;
-
-
-    border-top: solid 10px var(--gold);
+    border-top: solid 20px var(--burgundy);
 }
 
 .footer-content a {
-    color: white;
+    color: var(--burgundy);
     font-weight: 600;
     text-decoration: none;
 }
