@@ -62,8 +62,56 @@
                 Juab Girls Wrestling focuses on confidence, strength, and personal growth. 
             </p>
 
-            <section class="program-info">
-                <h3>Program Details</h3>
+            <section class="join-sections">
+
+                                <div class="join-form">
+                    <h3>Registration Form</h3>
+                    <form action="form-results.html" method="get">
+
+                        <label for="fname">Wrestler First Name <span class="required">*</span></label>
+                        <input type="text" id="fname" name="fname" required>
+
+                        <label for="lname">Wrestler Last Name <span class="required">*</span></label>
+                        <input type="text" id="lname" name="lname" required>
+
+                        <label for="parent">Parent/Guardian Name <span class="required">*</span></label>
+                        <input type="text" id="parent" name="parent" required>
+
+                        <label for="email">Parent Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Parent Phone <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="grade">Wrestler Grade <span class="required">*</span></label>
+                        <select id="grade" name="grade" required>
+                            <option value="" disabled selected>Select a grade</option>
+                            <option value="K">Kindergarten</option>
+                            <option value="1">1st Grade</option>
+                            <option value="2">2nd Grade</option>
+                            <option value="3">3rd Grade</option>
+                            <option value="4">4th Grade</option>
+                            <option value="5">5th Grade</option>
+                            <option value="6">6th Grade</option>
+                        </select>
+
+                        <label for="experience">Experience Level <span class="required">*</span></label>
+                        <select id="experience" name="experience">
+                            <option value="" disabled selected>Select experience</option>
+                            <option value="none">No experience</option>
+                            <option value="some">Some experience</option>
+                            <option value="experienced">Experienced</option>
+                        </select>
+
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+
+                        <button type="submit" class="btn-primary">Submit Registration</button>
+                    </form>
+                </div>
+
+                <div class="program-info">
+                    <h3>Program Details</h3>
                     <ul>
                         <li><strong>Who Can Join:</strong> Girls in Kindergarten – 6th grade</li>
                         <li><strong>Season:</strong> November – February</li>
@@ -71,57 +119,28 @@
                         <li><strong>Practice Days:</strong></li>
                         <ul>
                             <li><strong>Grades 3–6:</strong> Mondays & Wednesdays</li>
-                            <li><strong>Kindergarten–2nd Grade:</strong> Tuesdays & Thursdays</li>
+                            <li><strong>K–2nd Grade:</strong> Tuesdays & Thursdays</li>
                         </ul>
 
                         <li><strong>Practice Time:</strong> 3:30 PM – 5:30 PM</li>
                         <li><strong>Location:</strong> Juab Jr High School Wrestling Room</li>
                         <li><strong>Contact Coach:</strong> kaycee@juabwrestling.com</li>
                     </ul>
-            </section>
 
-            <section class="join-form">
-                <h3>Registration Form</h3>
+                    <h4>Junior High Girls Wrestling</h4>
+                    <ul>
+                        <li><strong>Grades:</strong> 7th – 9th grade</li>
+                        <li><strong>Season:</strong> November – February (same as youth program)</li>
+                        <li><strong>Practice Days:</strong> Monday – Wednesdays</li>
+                        <li><strong>Practice Time:</strong> 3:00 PM – 5:00 PM</li>
+                        <li><strong>Location:</strong> The Hive Building accross from the Jr High School</li>
+                        <li><strong>Coach Contact:</strong> kaycee@juabwrestling.com</li>
+                    </ul>
+                    
+                </div>
 
-                <form action="#" method="post">
 
-                    <label for="fname">Wrestler First Name</label>
-                    <input type="text" id="fname" name="fname" required>
 
-                    <label for="lname">Wrestler Last Name</label>
-                    <input type="text" id="lname" name="lname" required>
-
-                    <label for="parent">Parent/Guardian Name</label>
-                    <input type="text" id="parent" name="parent" required>
-
-                    <label for="email">Parent Email</label>
-                    <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
-
-                    <label for="phone">Parent Phone</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="grade">Wrestler Grade</label>
-                    <select id="grade" name="grade" required>
-                        <option value="" disabled selected>Select a grade</option>
-                        <option value="3">3rd Grade</option>
-                        <option value="4">4th Grade</option>
-                        <option value="5">5th Grade</option>
-                        <option value="6">6th Grade</option>
-                    </select>
-
-                    <label for="experience">Experience Level</label>
-                    <select id="experience" name="experience">
-                        <option value="" disabled selected>Select experience</option>
-                        <option value="none">No experience</option>
-                        <option value="some">Some experience</option>
-                        <option value="experienced">Experienced</option>
-                    </select>
-
-                    <label for="comments">Comments</label>
-                    <textarea id="comments" name="comments" rows="4"></textarea>
-
-                    <button type="submit" class="btn-primary">Submit Registration</button>
-                </form>
             </section>
 
         </main>
@@ -148,8 +167,8 @@
                 <p>
                     <a href="attributions.html">Resource Attributions</a> |
                     <a href="https://your-video-link.com" target="_blank">Final Project Video</a>
-                    <p id="lastModified"></p>
                 </p>
+                <p id="lastModified"></p>
             </div>
 
         </footer>
