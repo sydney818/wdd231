@@ -20,19 +20,15 @@ body {
 header {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
-  grid-template-areas:
-    "logo title menu";
+  grid-template-areas: "logo title menu";
   align-items: center;
-  padding: .5rem;
-  border-bottom: 2px solid #b3c8ec;
+  padding: 1rem;
   background-color: white;
 }
 
 /* Logo */
 .branding {
   grid-area: logo;
-  display: flex;
-  align-items: center;
 }
 
 header img {
@@ -44,9 +40,8 @@ header img {
 header .title {
   grid-area: title;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 700;
   margin: 0;
+  font-size: 1.4rem;
 }
 
 /* ------------------ NAVIGATION ------------------ */
@@ -60,7 +55,7 @@ header .title {
 }
 
 .hamburger::before {
-  content: "\2630"; /* hamburger icon */
+  content: "\2630"; 
 }
 
 .hamburger.show::before {
@@ -68,8 +63,8 @@ header .title {
 }
 
 .navigation {
-  grid-column: 1 / -1;
   display: none;
+  grid-column: 1 / -1;
   background-color: #b3c8ec;
 }
 

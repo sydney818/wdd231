@@ -1,7 +1,38 @@
 
 @media only screen and (min-width: 38rem) {
 
-/**************GALLERY***************/
+
+/***************HEADER*******************/
+
+  header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas:
+      "logo title"
+      "logo nav";
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+  .branding {
+    grid-area: logo;
+  }
+
+  header .title {
+    grid-area: title;
+    text-align: left;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+  /**************GALLERY***************/
 .gallery-grid {
   grid-template-columns: 1fr 1fr;
 }
