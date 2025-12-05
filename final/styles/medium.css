@@ -5,8 +5,9 @@
 /***************HEADER*******************/
 
   header {
+    position: relative;
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 110px 1fr;
     grid-template-areas:
       "logo title"
       "logo nav";
@@ -27,8 +28,16 @@
 
 
 
-
-
+.hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 9999; /* stay above nav */
+}
 
 
 
