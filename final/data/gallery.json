@@ -1,0 +1,132 @@
+
+
+[
+    {
+        "title": "Jr High Team Photo",
+        "image": "images/jr-team.webp",
+        "location": "Juab High School",
+        "year": 2024,
+        "description": "Jr girls team end of year photo."
+    },
+
+    {
+        "title": "Littles Team Photo",
+        "image": "images/little-team.webp",
+        "location": "Juab High School",
+        "year": 2024,
+        "description": "Little league team end of year photo"
+    },
+
+    {
+        "title": "Tournament Match",
+        "image": "images/wrestling1.webp",
+        "location": "Nephi, Utah",
+        "year": 2024,
+        "description": "Two young wrestlers face off in the starting position during a tournament match, focused and ready to compete."
+    },
+
+    {
+        "title": "Practice Drills",
+        "image": "images/wrestling2.webp",
+        "location": "Juab Jr High",
+        "year": 2024,
+        "description": "A determined wrestler maintains control on the mat as she battles for position during a competitive match."
+    },
+
+        {
+        "title": "Finals Match",
+        "image": "images/wrestling3.webp",
+        "location": "Orem, Utah",
+        "year": 2024,
+        "description": "A young wrestler listens as her coach offers support and guidance during a challenging moment at the tournament."
+    },
+
+    {
+        "title": "Tournament Win",
+        "image": "images/wrestling4.jpg",
+        "location": "Salt Lake City, Utah",
+        "year": 2024,
+        "description": "Successful tournament!"
+    },
+
+    {
+        "title": "Tournament Match",
+        "image": "images/wrestling5.jpg",
+        "location": "Delta, Utah",
+        "year": 2024,
+        "description": "In a demanding match, she shows determination and grit as she fights for control."
+    },
+    
+    {
+        "title": "Tournament Match",
+        "image": "images/wrestling6.jpg",
+        "location": "Pleasant Grove, Utah ",
+        "year": 2024,
+        "description": "In a challenging moment on the mat, she stays steady and determined, showing strength and resilience."
+    },
+
+        {
+        "title": "Tournament Match",
+        "image": "images/wrestling7.jpg",
+        "location": "Orem, Utah",
+        "year": 2024,
+        "description": "An explosive start for a takedown during a busy tournament match."
+    },
+
+    {
+        "title": "Tournament Wins",
+        "image": "images/wrestling8.jpg",
+        "location": "Nephi, Ut",
+        "year": 2024,
+        "description": "Girls celebrating their success."
+    },
+
+    {
+        "title": "Girls Win",
+        "image": "images/wrestling9.jpg",
+        "location": "Orem, Utah",
+        "year": 2024,
+        "description": "Girls take it again!"
+    },
+    
+    {
+        "title": "Take Down",
+        "image": "images/wrestling10.jpg",
+        "location": "The Hive, Utah",
+        "year": 2024,
+        "description": "Girls Take down."
+    },
+
+    {
+        "title": "Tournament Match",
+        "image": "images/wrestling11.jpg",
+        "location": "Nephi, Utah",
+        "year": 2024,
+        "description": "Girls wrestling match."
+    },
+    
+    {
+        "title": "Hold Your Ground",
+        "image": "images/wrestling12.jpg",
+        "location": "Delta, Utah",
+        "year": 2024,
+        "description": "Proof that strength isn’t just size—it's heart and effort."
+    },
+
+    {
+        "title": "Standing Strong",
+        "image": "images/wrestling13.jpg",
+        "location": "Orem, Utah",
+        "year": 2024,
+        "description": "Learning strength through challenges, one match at a time."
+    },
+    
+    {
+        "title": "Champions Rise",
+        "image": "images/wrestling14.jpg",
+        "location": "Juab Jr High",
+        "year": 2024,
+        "description": "Smiles, trophies, and the joy of giving your all."
+    }
+
+]

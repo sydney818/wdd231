@@ -19,40 +19,44 @@ body {
 /* ------------------ HEADER ------------------ */
 header {
   display: grid;
-  grid-template-columns: 40px auto 40px;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-areas:
+    "logo title menu";
   align-items: center;
-  padding: 10px;
-  border-bottom: solid 2px #b3c8ec;
+  padding: .5rem;
+  border-bottom: 2px solid #b3c8ec;
   background-color: white;
 }
 
-
-header img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-header span {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #3a3a3a;
-}
-
+/* Logo */
 .branding {
+  grid-area: logo;
   display: flex;
   align-items: center;
-  gap: 10px;
+}
+
+header img {
+  width: 45px;
+  height: auto;
+}
+
+/* Title */
+header .title {
+  grid-area: title;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 /* ------------------ NAVIGATION ------------------ */
 .hamburger {
+  grid-area: menu;
   justify-self: end;
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
-
 }
 
 .hamburger::before {
@@ -64,6 +68,7 @@ header span {
 }
 
 .navigation {
+  grid-column: 1 / -1;
   display: none;
   background-color: #b3c8ec;
 }
