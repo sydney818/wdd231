@@ -352,14 +352,14 @@ main {
   margin-bottom: 1rem;
 }
 
-.program-info, .join-form {
+.join-program-info, .join-form {
   padding: 1.5rem;
   border: 2px solid var(--accent1);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 8px;
 }
 
-.program-info h3, h4 {
+.join-program-info h3, h4 {
     margin-top: 2rem;
     color: var(--burgundy);
     font-weight: 600;
@@ -367,7 +367,7 @@ main {
     text-decoration-color: var(--gold);
 }
 
-.program-info ul li {
+.join-program-info ul li {
     line-height: 1.5;
     margin-bottom: .5rem;
 }

@@ -1,6 +1,5 @@
 
-//FORM-RESULTS PAGE
-
+// FORM-RESULTS PAGE
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
 
@@ -12,5 +11,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("out-grade").textContent = params.get("grade");
     document.getElementById("out-exp").textContent = params.get("experience");
     document.getElementById("out-comments").textContent = params.get("comments") || "None";
-
-})
+});
