@@ -31,6 +31,7 @@
 
     <!-- SCRIPTS -->
     <script src="scripts/global.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
 </head>
 <body>
@@ -96,13 +97,39 @@
                 </div>
 
                 <!-- Program Info -->
-                <div class="card">
+                <div class="card program-info-card">
                     <h3>Program Info</h3>
                     <p>
-                        Juab Girls Wrestling helps young athletes grow in confidence, discipline, and strength. 
-                        Our program supports beginners through experienced competitors in a positive, encouraging environment.
+                        Learn how Juab Girls Wrestling builds confidence, discipline,
+                        and strength in athletes of all ages.
                     </p>
+                    <button id="openProgramModal" class="btn-card">Learn More</button>
                 </div>
+
+                <dialog id="programModal" class="program-modal">
+                    <button id="closeProgramModal" class="modal-close">✖</button>
+
+                    <h2>Juab Girls Wrestling Program</h2>
+
+                    <p>
+                        Our program is designed for wrestlers of all skill levels —
+                        from first-time beginners to experienced competitors.
+                    </p>
+
+                    <ul>
+                        <li>✔ Builds confidence, discipline, and mental toughness</li>
+                        <li>✔ Encourages teamwork, sportsmanship, and resilience</li>
+                        <li>✔ Teaches fundamental and advanced wrestling techniques</li>
+                        <li>✔ Creates a positive and supportive team culture</li>
+                        <li>✔ Helps athletes prepare for competitive matches and tournaments</li>
+                    </ul>
+
+                    <p>
+                        Whether your wrestler is just starting or ready to advance,
+                        Juab Girls Wrestling provides a place to grow, improve, and succeed.
+                    </p>
+                </dialog>
+
             </section>
 
 

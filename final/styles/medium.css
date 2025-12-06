@@ -54,5 +54,11 @@
     display: block;
 }
 
+/***************ABOUT*******************/
+
+  .coach-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 }

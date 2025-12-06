@@ -87,9 +87,33 @@
 
 
 
+/*****************ABOUT********************/
+
+  .coach-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
 
 
+  .about-intro,
+  .about-mission,
+  .about-values,
+  .about-coaches {
+  padding: 2rem;
+  }
 
+  .about-intro h2,
+  .about-mission h2,
+  .about-values h2,
+  .about-coaches h2 {
+  font-size: 1.75rem;
+  }
+
+  .grid-layout1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  }
 
 
 
