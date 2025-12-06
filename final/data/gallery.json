@@ -43,7 +43,7 @@
 
     {
         "title": "Driving for the Win",
-        "image": "images/wrestling4.jpg",
+        "image": "images/wrestling4.webp",
         "location": "Salt Lake City, Utah",
         "year": 2024,
         "description": "Successful tournament!"
@@ -59,7 +59,7 @@
     
     {
         "title": "Tournament Match",
-        "image": "images/wrestling6.jpg",
+        "image": "images/wrestling6.webp",
         "location": "Pleasant Grove, Utah ",
         "year": 2024,
         "description": "In a challenging moment on the mat, she stays steady and determined, showing strength and resilience."
@@ -67,7 +67,7 @@
 
         {
         "title": "Staying in the Fight",
-        "image": "images/wrestling7.jpg",
+        "image": "images/wrestling7.webp",
         "location": "Orem, Utah",
         "year": 2024,
         "description": "An explosive start for a takedown during a busy tournament match."
@@ -75,7 +75,7 @@
 
     {
         "title": "Tournament Wins",
-        "image": "images/wrestling8.jpg",
+        "image": "images/wrestling8.webp",
         "location": "Nephi, Ut",
         "year": 2024,
         "description": "Girls celebrating their success."
@@ -83,7 +83,7 @@
 
     {
         "title": "Girls take it!",
-        "image": "images/wrestling9.jpg",
+        "image": "images/wrestling9.webp",
         "location": "Orem, Utah",
         "year": 2024,
         "description": "Girls take it again!"
@@ -91,7 +91,7 @@
     
     {
         "title": "Take Down",
-        "image": "images/wrestling10.jpg",
+        "image": "images/wrestling10.webp",
         "location": "The Hive, Utah",
         "year": 2024,
         "description": "In a fast-paced moment on the mat, a Juab wrestler drives through a clean takedown, showing excellent control and determination."
@@ -99,7 +99,7 @@
 
     {
         "title": "Control on the Mat",
-        "image": "images/wrestling11.jpg",
+        "image": "images/wrestling11.webp",
         "location": "Nephi, Utah",
         "year": 2024,
         "description": "Girls wrestling match."
@@ -115,7 +115,7 @@
 
     {
         "title": "Standing Strong",
-        "image": "images/wrestling13.jpg",
+        "image": "images/wrestling13.webp",
         "location": "Orem, Utah",
         "year": 2024,
         "description": "Learning strength through challenges, one match at a time."
@@ -123,7 +123,7 @@
     
     {
         "title": "Champions Rise",
-        "image": "images/wrestling14.jpg",
+        "image": "images/wrestling14.webp",
         "location": "Juab Jr High",
         "year": 2024,
         "description": "Smiles, trophies, and the joy of giving your all."
