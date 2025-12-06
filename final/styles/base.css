@@ -475,6 +475,14 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.gallery-title {
+    text-align: center;
+    color: var(--burgundy);
+    margin: 1.5rem 0;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+}
+
 /*************************GALLERY MODAL*************************/
 
 
