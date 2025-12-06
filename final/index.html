@@ -15,7 +15,7 @@
     <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="Juab Girls Wrestling | Official Team Website">
     <meta property="og:description" content="Explore the Juab Girls Wrestling program—roster details, schedules, match results, athlete highlights, and more.">
-    <meta property="og:image" content="https://sydney818.github.io/juab-girls-wrestling/images/social-share.jpg">
+    <meta property="og:image" content="https://sydney818.github.io/juab-girls-wrestling/social-share.jpg">
     <meta property="og:url" content="https://sydney818.github.io/juab-girls-wrestling/">
     <meta property="og:type" content="website">
 
@@ -59,16 +59,16 @@
 
         <main>
             <section class="hero">
-                <img src="images/hero.webp" alt="Juab Girls Wrestling Team" class="hero-img">
+                <img src="images/hero1.webp" alt="Juab Girls Wrestling Team" class="hero-img">
 
                 <div class="hero-text">
-                    <h1>JWC Girls Wrestling</h1>
+                    <h2>JWC Girls Wrestling</h2>
                     <p>Building strong, confident athletes on and off the mat!</p>
-                    <a href="join.html" class="btn-primary">Join the Team</a>
+                    <!-- was btn-primary -->
+                    <a href="join.html" class="primary-btn">Join the Team</a>
                 </div>
             </section>
 
-            
             <!-- WELCOME SECTION -->
             <section class="welcome">
                 <h2>Welcome to Juab Girls Wrestling!</h2>
@@ -79,35 +79,39 @@
                 </p>
             </section>
 
-                <!-- THREE COLUMN SECTION -->
+            <!-- THREE COLUMN SECTION -->
             <section class="three-cards">
 
                 <!-- Coaches Card -->
-                <div class="card">
+                <!-- was class="card" -->
+                <div class="info-card">
                     <h3>About the Coaches</h3>
                     <img src="images/little-team.webp" alt="Coaches">
-                    <a class="btn-card" href="about.html">Coaches Info</a>
+                    <!-- was btn-card -->
+                    <a class="card-btn" href="about.html">Coaches Info</a>
                 </div>
 
                 <!-- Gallery Card -->
-                <div class="card">
+                <div class="info-card">
                     <h3>Gallery</h3>
-                    <img src="images/wrestling10.jpg" alt="Gallery preview">
-                    <a class="btn-card" href="gallery.html">View Gallery</a>
+                    <img src="images/wrestling10.webp" alt="Gallery preview">
+                    <a class="card-btn" href="gallery.html">View Gallery</a>
                 </div>
 
                 <!-- Program Info -->
-                <div class="card program-info-card">
+                <!-- this one already had unique class; we just change the button -->
+                <div class="program-info-card">
                     <h3>Program Info</h3>
                     <p>
-                        Learn how Juab Girls Wrestling builds confidence, discipline,
-                        and strength in athletes of all ages.
+                        Discover how Juab Girls Wrestling helps athletes develop confidence, discipline, resilience, and strength at every level. Our supportive environment empowers wrestlers of all ages to grow technically, mentally, and emotionally while building teamwork and character.
                     </p>
-                    <button id="openProgramModal" class="btn-card">Learn More</button>
+                    <button id="openProgramModal" class="card-btn">Learn More</button>
                 </div>
 
-                <dialog id="programModal" class="program-modal">
-                    <button id="closeProgramModal" class="modal-close">✖</button>
+                <!-- was class="program-modal" -->
+                <dialog id="programModal" class="program-dialog">
+                    <!-- was class="modal-close" -->
+                    <button id="closeProgramModal" class="dialog-close">✖</button>
 
                     <h2>Juab Girls Wrestling Program</h2>
 
@@ -131,8 +135,6 @@
                 </dialog>
 
             </section>
-
-
         </main>
 
         <!-- FOOTER -->
@@ -157,13 +159,11 @@
                 <p>
                     <a href="attributions.html">Resource Attributions</a> |
                     <a href="https://your-video-link.com" target="_blank">Final Project Video</a>
-                    <p id="lastModified"></p>
                 </p>
             </div>
 
         </footer>
     </div> 
 
-    
 </body>
 </html>
