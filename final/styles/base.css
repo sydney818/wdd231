@@ -624,4 +624,55 @@ footer {
   filter: brightness(0) saturate(100%) invert(81%) sepia(20%) saturate(363%) hue-rotate(359deg) brightness(87%) contrast(90%);
 }
 
+/**********************************ATTRIBUTIONS*************************/
+
+
+.attrib-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.attrib-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--burgundy);
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+}
+
+.attrib-card {
+    background: var(--white);
+    border: 1px solid var(--accent1);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+.attrib-card h2 {
+    background-color: var(--accent1);
+    color: var(--burgundy);
+    padding: .5rem 1rem;
+    border-left: 6px solid var(--gold);
+    margin-top: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.attrib-card ul {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+    line-height: 1.6;
+}
+
+.attrib-card a {
+    color: var(--burgundy);
+    font-weight: 600;
+}
+
+.attrib-card a:hover {
+    color: var(--gold);
+}
+
 
