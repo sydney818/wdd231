@@ -37,7 +37,7 @@ header {
   align-items: center;
   padding: 1rem;
   background: var(--white);
-  border-bottom: 6px solid var(--burgundy);
+  border-bottom: 20px solid var(--burgundy);
 }
 
 .branding {
@@ -529,6 +529,11 @@ main {
 
 
 /************************ABOUT*********************************/
+
+.page-heading {
+  color: var(--burgundy);
+  text-align: center;
+}
 
 .about-intro,
 .about-mission,
