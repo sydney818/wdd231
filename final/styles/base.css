@@ -27,7 +27,7 @@ body {
 
 
 
-/*----------------- HEADER -----------------*/
+/********************HEADER******************/
 
 header {
   display: grid;
@@ -176,7 +176,7 @@ main {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
-/* you changed to <h2> in HTML, so match that here */
+
 .hero-text h2 {
   font-size: 1.4rem; 
 }
@@ -185,7 +185,7 @@ main {
   font-size: 0.9rem; 
 }
 
-/* was .btn-primary */
+
 .primary-btn {
   display: inline-block;
   background-color: var(--burgundy);
@@ -194,6 +194,7 @@ main {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .primary-btn:hover {
@@ -377,6 +378,7 @@ main {
   gap: 1rem;
   margin-bottom: 1rem;
   padding-right: 2.5rem;
+
 }
 
 .join-form input, .join-form select, .join-form textarea {
